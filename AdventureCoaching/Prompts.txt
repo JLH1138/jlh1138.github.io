@@ -1,0 +1,525 @@
+I have attached the logo and a sample flyer for the business, Adventure Coaching.  Help me craft a prompt for a website generator to create a website for this business.  Here are details about the business:
+
+
+Adventure Coaching Website Generator Prompt
+Project Overview
+
+Design and build a premium, modern, fully responsive website for Adventure Coaching, LLC, a coaching and consulting practice that helps men, couples, and leaders rediscover direction through truth, healing, and restoration.
+
+This website should not feel like a counseling office or therapy practice. It should feel like an experienced mountain guide helping people navigate difficult terrain toward a better destination.
+
+The emotional experience should leave every visitor feeling:
+
+Safe
+Understood
+Calm
+Hopeful
+Encouraged
+Stronger
+Ready to take the next step
+
+The site should emphasize guidance, direction, integrity, and restoration, using the mountain journey as the central metaphor.
+
+Brand Foundation
+Brand Statement
+
+Adventure Coaching helps people rediscover direction through truth, healing, and restoration.
+
+Every journey begins with a single step, but our focus is always on the destination—
+
+The View From the Summit.
+
+Core Values
+Truth
+Direction
+Restoration
+Hope
+Trust
+Courage
+Perspective
+Brand Voice
+
+The voice should be:
+
+Calm
+Confident
+Professional
+Compassionate
+Honest
+Hope-filled
+Never clinical
+Never overly emotional
+Never sales-oriented
+
+Write as an experienced guide who has walked difficult trails and knows the path forward.
+
+Visual Direction
+
+The visual identity should feel premium, timeless, and outdoors-inspired.
+
+Use the supplied Adventure Coaching compass-and-mountain logo throughout the site.
+
+Color Palette
+Deep Navy (#14263B)
+Muted Copper / Antique Gold (#B68457)
+Warm Cream (#F8F4ED)
+Slate Gray (#5A6673)
+Forest Green accents (#324D42)
+Typography
+
+Elegant serif headings paired with modern clean sans-serif body text.
+
+Large spacing.
+
+Minimal clutter.
+
+Luxury outdoor aesthetic.
+
+Photography
+
+Use premium imagery featuring:
+
+Mountains
+Sunrises
+Trails
+Rivers
+Lakes
+Open landscapes
+Couples overlooking mountain vistas
+Men hiking
+Campfires
+Quiet reflection
+Compass imagery
+Wide open horizons
+
+Avoid:
+
+Generic office photos
+Handshakes
+Therapy couches
+Fake corporate smiles
+Busy backgrounds
+Clinical environments
+
+Every image should reinforce movement toward hope.
+
+Site Navigation
+
+Home
+
+About Lance
+
+Services
+
+Resources
+
+Contact
+
+Schedule Consultation
+
+The Services menu should include:
+
+Integrity Coaching
+Disclosure & Relational Repair
+Couples Recovery
+Core Values Index (CVI)
+Adventure-Based Men's Experiences
+Homepage Structure
+Hero Section
+
+Large cinematic full-screen mountain sunrise.
+
+Subtle motion on the compass logo.
+
+Headline:
+
+Rediscover Direction Through Truth, Healing, and Restoration
+
+Subheadline:
+
+Helping men, couples, and leaders pursue integrity, healing, resilience, and lasting transformation through coaching, disclosure facilitation, Core Values Index coaching, and adventure-based experiences.
+
+Buttons:
+
+Primary:
+
+Schedule a Consultation
+
+Secondary:
+
+Explore Your Journey
+
+Every Journey Begins Somewhere
+
+Present three audience cards.
+
+Men
+
+Freedom from unwanted sexual behaviors.
+
+Integrity.
+
+Purpose.
+
+Couples
+
+Healing after betrayal.
+
+Restoring trust.
+
+Moving forward together.
+
+Leaders
+
+Greater self-awareness.
+
+Purpose.
+
+Confidence.
+
+The Path to the Summit
+
+Instead of listing services, create a beautiful visual roadmap.
+
+Beginning
+
+↓
+
+Schedule Consultation
+
+↓
+
+Gain Clarity
+
+↓
+
+Choose Your Path
+
+↓
+
+Integrity Coaching
+
+Disclosure Process
+
+Couples Recovery
+
+Core Values Index
+
+Adventure Experiences
+
+↓
+
+Transformation
+
+↓
+
+The View From the Summit
+
+This section should visually reinforce that every service supports the same destination.
+
+Featured Services
+
+Display five premium cards.
+
+Each should include:
+
+Icon
+
+Image
+
+Brief description
+
+Button
+
+Integrity Coaching
+
+Begin Your Journey
+
+Disclosure & Relational Repair
+
+Schedule a Consultation
+
+Couples Recovery
+
+Start Healing Together
+
+Core Values Index
+
+Discover Your Design
+
+Adventure Experiences
+
+Join the Interest List
+
+Why Adventure Coaching
+
+Highlight Lance's unique background.
+
+30+ Years Law Enforcement
+
+Professional Coach
+
+Board Certified Mental Health Coach
+
+Pastoral Recovery Leadership
+
+Disclosure Guide Candidate
+
+Faith-Integrated Coaching Available
+
+Meet Lance Baker
+
+Professional portrait.
+
+Personal story.
+
+Mission.
+
+Approach.
+
+Final Call to Action
+
+"You don't have to navigate this journey alone."
+
+Schedule Your Consultation
+
+Services
+
+Create a dedicated landing page for every service.
+
+Each page should include:
+
+Hero image
+Overview
+Who it's for
+Benefits
+Process
+Frequently Asked Questions
+Call to Action
+Integrity Coaching
+
+Focus on:
+
+pornography recovery
+unwanted sexual behaviors
+integrity
+emotional awareness
+accountability
+relapse prevention
+healthy relationships
+purpose
+
+CTA
+
+Schedule Coaching Consultation
+
+Disclosure & Relational Repair
+
+This page should explain the complete Rite of Truth & Relational Repair Process.
+
+Include:
+
+Why disclosure matters
+
+Preparation
+
+Professional guidance
+
+Safety
+
+Healing
+
+Seven-step process
+
+Clarify that disclosure services begin with a confidential consultation because each situation is unique.
+
+CTA
+
+Request a Disclosure Consultation
+
+Do NOT offer direct online booking for disclosure sessions.
+
+Couples Recovery
+
+Focus on:
+
+Healing after betrayal
+
+Trust rebuilding
+
+Communication
+
+Boundaries
+
+Emotional connection
+
+Recovery planning
+
+CTA
+
+Schedule Couples Consultation
+
+Core Values Index
+
+Explain:
+
+What CVI measures
+
+How it differs from personality tests
+
+What clients receive
+
+Assessment
+
+Professional debrief
+
+Personalized coaching
+
+Leadership applications
+
+Relationship applications
+
+Recovery applications
+
+CTA
+
+Schedule Your CVI Assessment
+
+Adventure-Based Men's Experiences
+
+Create an inspiring page explaining the vision.
+
+Explain that several guided outdoor experiences will be offered each year.
+
+Potential activities include:
+
+Hiking
+Kayaking
+Fishing
+Camping
+Leadership challenges
+Recovery intensives
+Wilderness reflection
+
+Since events are not yet scheduled, display:
+
+"Upcoming Experiences Coming Soon"
+
+Provide an interest list signup.
+
+Collect:
+
+Name
+Email
+Phone
+Activities of interest
+
+When future events are added, this section should easily convert into a registration page.
+
+Scheduling Logic
+
+Implement three different scheduling workflows.
+
+Coaching
+
+Allow visitors to directly schedule:
+
+Integrity Coaching
+Couples Recovery
+Core Values Index
+
+Support Calendly or Acuity integration.
+
+Disclosure Services
+
+Do not allow direct booking.
+
+Instead:
+
+Schedule a confidential consultation.
+
+After consultation, appointments are coordinated personally.
+
+Adventure Experiences
+
+No booking.
+
+Interest list only.
+
+Resources
+
+Include a resource center for future growth.
+
+Support:
+
+Articles
+Blog
+Frequently Asked Questions
+Recommended Books
+Videos
+Downloadable Guides
+SEO
+
+Optimize the website for searches related to:
+
+Integrity Coaching
+Sexual Recovery Coaching
+Pornography Recovery Coach
+Betrayal Recovery
+Disclosure Facilitation
+Full Therapeutic Disclosure
+Couples Recovery Coaching
+Marriage Restoration
+Core Values Index
+CVI Coaching
+Men's Coaching
+Christian Recovery Coaching
+Faith-Based Coaching
+First Responder Coaching
+Leadership Coaching
+
+Use semantic HTML, schema markup, accessibility best practices, fast performance, and excellent Core Web Vitals.
+
+Footer
+
+Include:
+
+Adventure Coaching logo
+
+"The View From the Summit"
+
+Phone
+
+Email
+
+Contact Form
+
+Social media placeholders
+
+Privacy Policy
+
+Terms
+
+Copyright
+
+Technical Requirements
+Responsive design for desktop, tablet, and mobile
+Fast-loading and optimized
+Accessible (WCAG 2.2 AA)
+Clean, reusable components
+Smooth, understated animations
+Modular architecture for future expansion
+CMS-ready for editing services, resources, and events
+Easy integration with Calendly, Google Calendar, and email marketing platforms
+Contact forms with spam protection
+Analytics-ready (Google Analytics and Search Console)
+Clear SEO metadata for every page
+Overall Creative Direction
+
+Design this website as if it were created by a premium outdoor leadership brand combined with a high-end executive coaching practice.
+
+The experience should communicate trust before expertise, hope before solutions, and direction before services.
+
+Every page should reinforce one central message:
+
+Adventure Coaching exists to help people rediscover direction through truth, healing, and restoration. Every journey begins with a single step, but the destination is always the View From the Summit.
