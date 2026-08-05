@@ -2,17 +2,17 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta property="og:image" content="../Logo.png" />
-    <link rel="icon" href="../Logo.png" />
+    <meta property="og:image" content="Logo.png" />
+    <link rel="icon" href="Logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Adventure Coaching. Reach out with questions or schedule a confidential consultation for integrity coaching, couples recovery, disclosure facilitation, or Core Values Index coaching.">
-    <meta name="keywords" content="Contact Adventure Coaching, Integrity Coaching, Sexual Recovery Coaching, Betrayal Recovery, Disclosure Facilitation, Couples Recovery Coaching, Core Values Index, Christian Recovery Coaching">
+    <meta name="description" content="Schedule a confidential consultation with Adventure Coaching. Integrity Coaching, Disclosure & Relational Repair, Couples Recovery, and Core Values Index assessments.">
+    <meta name="keywords" content="Schedule Consultation, Integrity Coaching, Couples Recovery, Core Values Index, Disclosure Facilitation, Men's Coaching">
     <meta name="author" content="Lance Baker, Adventure Coaching LLC">
-    <meta property="og:title" content="Contact — Adventure Coaching">
-    <meta property="og:description" content="Ready to take the first step? Reach out with questions, or go ahead and schedule a consultation.">
+    <meta property="og:title" content="Schedule a Consultation — Adventure Coaching">
+    <meta property="og:description" content="Choose the service that fits your needs. Your first consultation is confidential and obligation-free.">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <title>Contact — Adventure Coaching</title>
+    <title>Schedule a Consultation — Adventure Coaching</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,6 +45,10 @@
         ::-webkit-scrollbar-track { background: #14263B; }
         ::-webkit-scrollbar-thumb { background: #5A6673; border-radius: 3px; }
         ::-webkit-scrollbar-thumb:hover { background: #B68457; }
+        
+        html {
+            scroll-behavior: smooth;
+        }
 
         .noise-overlay {
             position: fixed; inset: 0; z-index: 100; pointer-events: none; opacity: 0.025;
@@ -87,7 +91,6 @@
         }
         .form-input:focus { border-color: #B68457; outline: none; box-shadow: 0 0 0 3px rgba(182, 132, 87, 0.15); }
         .form-input::placeholder { color: #5A6673; }
-        .form-input option { background-color: #14263B; color: #F8F4ED; }
 
         .mobile-menu {
             transform: translateX(100%);
@@ -124,99 +127,96 @@
     <script src="parts/mobileNav.js"></script>
 
     <!-- ========== PAGE CONTENT ========== -->
-    <main id="page-contact" class="page-section">
+    <main id="page-schedule" class="page-section">
         <section class="pt-32 pb-16 px-6 bg-navy-500">
             <div class="max-w-5xl mx-auto text-center">
-                <span class="reveal-on-scroll text-xs uppercase tracking-[0.25em] text-copper-400 font-medium">Get in Touch</span>
-                <h1 class="reveal-on-scroll stagger-1 font-serif text-4xl sm:text-5xl text-cream-50 mt-4 tracking-tight">Contact</h1>
-                <p class="reveal-on-scroll stagger-2 text-slate-300 mt-4 text-lg font-light max-w-2xl mx-auto">Ready to take the first step? Reach out with questions, or go ahead and schedule a consultation.</p>
+                <span class="reveal-on-scroll text-xs uppercase tracking-[0.25em] text-copper-400 font-medium">Take the Next Step</span>
+                <h1 class="reveal-on-scroll stagger-1 font-serif text-4xl sm:text-5xl text-cream-50 mt-4 tracking-tight">Schedule a Consultation</h1>
+                <p class="reveal-on-scroll stagger-2 text-slate-300 mt-4 text-lg font-light max-w-2xl mx-auto">Choose the service that fits your needs. Your first consultation is confidential and obligation-free.</p>
             </div>
         </section>
         <section class="py-16 px-6 bg-navy-600">
-            <div class="max-w-5xl mx-auto grid lg:grid-cols-5 gap-12">
-                <div class="lg:col-span-3">
-                    <form id="contactForm" class="space-y-5" action="https://formsubmit.co/jamesleehudsoniv@gmail.com" method="POST">
-                        <div>
-                            <input type="hidden" name="_next" value="https://adventurecoaching.com/thank-you" />
+            <div class="max-w-5xl mx-auto">
+                <!-- Direct Scheduling -->
+                <div class="mb-16">
+                    <h2 class="reveal-on-scroll font-serif text-2xl text-cream-50 mb-2">Book Directly</h2>
+                    <p class="reveal-on-scroll stagger-1 text-slate-400 text-sm font-light mb-8">Select a service to schedule your consultation through our online calendar.</p>
+                    <div class="grid sm:grid-cols-3 gap-6">
+                        <div class="reveal-on-scroll stagger-1 bg-navy-500/50 border border-navy-400/20 rounded-xl p-6 text-center hover:border-copper-400/40 transition-all group cursor-pointer" onclick="showToast('Calendly integration would open here for Integrity Coaching.')">
+                            <span class="iconify w-10 h-10 text-copper-400 mx-auto mb-4" data-icon="lucide:shield-check"></span>
+                            <h3 class="font-serif text-lg text-cream-50 mb-2">Integrity Coaching</h3>
+                            <p class="text-slate-400 text-xs font-light mb-4">Confidential consultation to discuss your journey toward integrity.</p>
+                            <span class="btn-primary inline-block px-5 py-2.5 rounded-lg text-xs font-medium">Book Now</span>
                         </div>
-                        <div class="grid sm:grid-cols-2 gap-5">
-                            <div>
-                                <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">First Name</label>
-                                <input type="text" name="first_name" required class="form-input w-full px-4 py-3 rounded-lg text-sm" placeholder="John">
-                            </div>
-                            <div>
-                                <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">Last Name</label>
-                                <input type="text" name="last_name" required class="form-input w-full px-4 py-3 rounded-lg text-sm" placeholder="Doe">
-                            </div>
+                        <div class="reveal-on-scroll stagger-2 bg-navy-500/50 border border-navy-400/20 rounded-xl p-6 text-center hover:border-copper-400/40 transition-all group cursor-pointer" onclick="showToast('Calendly integration would open here for Couples Recovery.')">
+                            <span class="iconify w-10 h-10 text-copper-400 mx-auto mb-4" data-icon="lucide:heart-handshake"></span>
+                            <h3 class="font-serif text-lg text-cream-50 mb-2">Couples Recovery</h3>
+                            <p class="text-slate-400 text-xs font-light mb-4">Initial consultation for couples ready to begin healing together.</p>
+                            <span class="btn-primary inline-block px-5 py-2.5 rounded-lg text-xs font-medium">Book Now</span>
                         </div>
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">Email</label>
-                            <input type="email" name="email" required class="form-input w-full px-4 py-3 rounded-lg text-sm" placeholder="john@example.com">
+                        <div class="reveal-on-scroll stagger-3 bg-navy-500/50 border border-navy-400/20 rounded-xl p-6 text-center hover:border-copper-400/40 transition-all group cursor-pointer" onclick="showToast('Calendly integration would open here for CVI Assessment.')">
+                            <span class="iconify w-10 h-10 text-copper-400 mx-auto mb-4" data-icon="lucide:compass"></span>
+                            <h3 class="font-serif text-lg text-cream-50 mb-2">Core Values Index</h3>
+                            <p class="text-slate-400 text-xs font-light mb-4">Schedule your CVI assessment and professional debrief session.</p>
+                            <span class="btn-primary inline-block px-5 py-2.5 rounded-lg text-xs font-medium">Book Now</span>
                         </div>
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">Phone (Optional)</label>
-                            <input type="tel" name="phone" class="form-input w-full px-4 py-3 rounded-lg text-sm" placeholder="(555) 123-4567">
-                        </div>
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">What can I help you with?</label>
-                            <select name="topic" class="form-input w-full px-4 py-3 rounded-lg text-sm">
-                                <option value="">Select a topic...</option>
-                                <option value="Integrity Coaching">Integrity Coaching</option>
-                                <option value="Disclosure & Relational Repair">Disclosure & Relational Repair</option>
-                                <option value="Couples Recovery">Couples Recovery</option>
-                                <option value="Core Values Index">Core Values Index</option>
-                                <option value="Adventure Experiences">Adventure Experiences</option>
-                                <option value="General Question">General Question</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">Message</label>
-                            <textarea name="message" rows="5" required class="form-input w-full px-4 py-3 rounded-lg text-sm resize-none" placeholder="Share what's on your mind..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary px-8 py-3.5 rounded-lg text-sm font-medium w-full sm:w-auto">
-                            Send Message
-                        </button>
-                    </form>
+                    </div>
                 </div>
-                <div class="lg:col-span-2 space-y-8">
-                    <div>
-                        <h3 class="font-serif text-xl text-cream-50 mb-4">Direct Contact</h3>
-                        <div class="space-y-4">
-                            <a href="mailto:lance@adventurecoaching.org" class="flex items-center gap-3 text-slate-300 hover:text-copper-400 transition-colors text-sm">
-                                <span class="iconify w-5 h-5 text-copper-400" data-icon="lucide:mail"></span>
-                                lance@adventurecoaching.org
-                            </a>
-                            <a href="tel:+18132520765" class="flex items-center gap-3 text-slate-300 hover:text-copper-400 transition-colors text-sm">
-                                <span class="iconify w-5 h-5 text-copper-400" data-icon="lucide:phone"></span>
-                                (813) 252-0765
+                <!-- Disclosure - Consultation Only -->
+                <div class="mb-16 bg-navy-500/30 border border-copper-400/20 rounded-xl p-8">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <span class="iconify w-8 h-8 text-copper-400" data-icon="lucide:door-open"></span>
+                                <h3 class="font-serif text-xl text-cream-50">Disclosure & Relational Repair</h3>
+                            </div>
+                            <p class="text-slate-300 text-sm font-light leading-relaxed mb-4">Guided disclosure and relational repair for couples navigating the path toward truth and healing.</p>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <a href="#" onclick="showToast('Calendly integration would open here for Disclosure Consultations.')" class="btn-secondary inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium">
+                                Book a Disclosure Consultation
+                                <span class="iconify w-4 h-4" data-icon="lucide:arrow-right"></span>
                             </a>
                         </div>
                     </div>
-                    <div class="border-t border-navy-400/20 pt-8">
-                        <h3 class="font-serif text-xl text-cream-50 mb-4">Prefer to Jump Straight to Scheduling?</h3>
-                        <p class="text-slate-400 text-sm font-light mb-4">For Integrity Coaching, Couples Recovery, Disclosure & Relational Repair Services, and CVI assessments, you can book directly.</p>
-                        <a href="#" onclick="navigateTo('schedule')" class="btn-primary inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium">
-                            Schedule Now <span class="iconify w-4 h-4" data-icon="lucide:arrow-right"></span>
-                        </a>
-                    </div>
-                    <!--div class="border-t border-navy-400/20 pt-8">
-                        <h3 class="font-serif text-xl text-cream-50 mb-4">Follow the Journey</h3>
-                        <div class="flex gap-3">
-                            <a href="#" class="w-10 h-10 rounded-lg border border-navy-400/30 flex items-center justify-center text-slate-400 hover:text-copper-400 hover:border-copper-400/40 transition-all">
-                                <span class="iconify w-5 h-5" data-icon="lucide:instagram"></span>
-                            </a>
-                            <a href="#" class="w-10 h-10 rounded-lg border border-navy-400/30 flex items-center justify-center text-slate-400 hover:text-copper-400 hover:border-copper-400/40 transition-all">
-                                <span class="iconify w-5 h-5" data-icon="lucide:facebook"></span>
-                            </a>
-                            <a href="#" class="w-10 h-10 rounded-lg border border-navy-400/30 flex items-center justify-center text-slate-400 hover:text-copper-400 hover:border-copper-400/40 transition-all">
-                                <span class="iconify w-5 h-5" data-icon="lucide:linkedin"></span>
-                            </a>
-                            <a href="#" class="w-10 h-10 rounded-lg border border-navy-400/30 flex items-center justify-center text-slate-400 hover:text-copper-400 hover:border-copper-400/40 transition-all">
-                                <span class="iconify w-5 h-5" data-icon="lucide:youtube"></span>
-                            </a>
-                        </div>
-                    </!--div-->
                 </div>
+                <!-- Adventure - Interest List -->
+                <section id="interest-list">
+                <div class="bg-navy-500/30 border border-forest-400/30 rounded-xl p-8">
+                    <div class="grid md:grid-cols-2 gap-8 items-start">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <span class="iconify w-8 h-8 text-copper-400" data-icon="lucide:mountain"></span>
+                                <h3 class="font-serif text-xl text-cream-50">Adventure-Based Experiences</h3>
+                            </div>
+                            <p class="text-slate-300 text-sm font-light leading-relaxed mb-2">Upcoming experiences are being planned now. Join the interest list to be the first to know when dates and locations are announced.</p>
+                            <p class="text-copper-400 text-sm font-medium">Upcoming Experiences Coming Soon</p>
+                        </div>
+                        <form action="https://formsubmit.co/anawesomeemail@protonmail.com" method="POST" class="space-y-4">
+    <!-- FormSubmit config -->
+    <input type="hidden" name="_subject" value="New Interest List Signup!">
+    <input type="hidden" name="_next" value="https://adventurecoaching.com/thank-you">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+
+    <input type="text" name="name" required placeholder="Your Name" class="form-input w-full px-4 py-2.5 rounded-lg text-sm">
+    <input type="email" name="email" required placeholder="Email Address" class="form-input w-full px-4 py-2.5 rounded-lg text-sm">
+    <input type="tel" name="phone" placeholder="Phone (Optional)" class="form-input w-full px-4 py-2.5 rounded-lg text-sm">
+    <div>
+        <label class="block text-xs text-slate-400 mb-2 font-light">Activities of Interest</label>
+        <div class="grid grid-cols-2 gap-2">
+            <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" name="activities" value="Hiking" class="accent-copper-400"> Hiking</label>
+            <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" name="activities" value="Kayaking" class="accent-copper-400"> Kayaking</label>
+            <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" name="activities" value="Fishing" class="accent-copper-400"> Fishing</label>
+            <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" name="activities" value="Camping" class="accent-copper-400"> Camping</label>
+            <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" name="activities" value="Leadership" class="accent-copper-400"> Leadership</label>
+            <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" name="activities" value="Recovery" class="accent-copper-400"> Recovery</label>
+        </div>
+    </div>
+    <button type="submit" class="btn-primary w-full px-6 py-2.5 rounded-lg text-sm font-medium">Join the Interest List</button>
+</form>
+                    </div>
+                </div></section>
             </div>
         </section>
     </main>
