@@ -118,16 +118,17 @@
         }
         .form-input:focus { border-color: #B68457; outline: none; box-shadow: 0 0 0 3px rgba(182, 132, 87, 0.15); }
         .form-input::placeholder { color: #5A6673; }
-        .form-input option { background-color: #14263B; color: #F8F4ED; }
 
         .page-section { display: none; }
         .page-section.is-active { display: block; }
 
-        .mobile-menu {
-            transform: translateX(100%);
-            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        @media (max-width: 768px) {
+            .mobile-menu {
+                transform: translateX(100%);
+                transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .mobile-menu.is-open { transform: translateX(0); }
         }
-        .mobile-menu.is-open { transform: translateX(0); }
 
         .toast-notification {
             position: fixed; bottom: 2rem; right: 2rem; z-index: 200;

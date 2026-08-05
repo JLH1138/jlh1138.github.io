@@ -2,8 +2,6 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta property="og:image" content="Logo.png" />
-    <link rel="icon" href="Logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Adventure Coaching helps men, couples, and leaders rediscover direction through truth, healing, and restoration. Integrity coaching, disclosure facilitation, couples recovery, CVI coaching, and adventure-based experiences.">
     <meta name="keywords" content="Integrity Coaching, Sexual Recovery Coaching, Pornography Recovery Coach, Betrayal Recovery, Disclosure Facilitation, Full Therapeutic Disclosure, Couples Recovery Coaching, Marriage Restoration, Core Values Index, CVI Coaching, Men's Coaching, Christian Recovery Coaching, Faith-Based Coaching, First Responder Coaching, Leadership Coaching">
@@ -118,16 +116,17 @@
         }
         .form-input:focus { border-color: #B68457; outline: none; box-shadow: 0 0 0 3px rgba(182, 132, 87, 0.15); }
         .form-input::placeholder { color: #5A6673; }
-        .form-input option { background-color: #14263B; color: #F8F4ED; }
 
         .page-section { display: none; }
         .page-section.is-active { display: block; }
 
-        .mobile-menu {
-            transform: translateX(100%);
-            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        @media (max-width: 768px) {
+            .mobile-menu {
+                transform: translateX(100%);
+                transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .mobile-menu.is-open { transform: translateX(0); }
         }
-        .mobile-menu.is-open { transform: translateX(0); }
 
         .toast-notification {
             position: fixed; bottom: 2rem; right: 2rem; z-index: 200;
@@ -209,6 +208,7 @@
                     </div>
                 </div>
 
+                <a href="#" onclick="navigateTo('resources')" class="nav-link px-4 py-2 text-sm text-cream-200 hover:text-copper-400 transition-colors duration-300">Resources</a>
                 <a href="#" onclick="navigateTo('contact')" class="nav-link px-4 py-2 text-sm text-cream-200 hover:text-copper-400 transition-colors duration-300">Contact</a>
                 <a href="#" onclick="navigateTo('schedule')" class="ml-4 btn-primary px-6 py-2.5 rounded-lg text-sm font-medium">Schedule Consultation</a>
             </div>
@@ -234,6 +234,7 @@
                     <a href="#" onclick="openService('cvi');toggleMobileMenu()" class="block px-4 py-2.5 text-sm text-cream-200 hover:text-copper-400 transition-colors">Core Values Index</a>
                     <a href="#" onclick="openService('adventure');toggleMobileMenu()" class="block px-4 py-2.5 text-sm text-cream-200 hover:text-copper-400 transition-colors">Adventure Experiences</a>
                 </div>
+                <a href="#" onclick="navigateTo('resources');toggleMobileMenu()" class="px-4 py-3 text-lg text-cream-100 hover:text-copper-400 transition-colors border-b border-navy-400/20">Resources</a>
                 <a href="#" onclick="navigateTo('contact');toggleMobileMenu()" class="px-4 py-3 text-lg text-cream-100 hover:text-copper-400 transition-colors border-b border-navy-400/20">Contact</a>
             </div>
             <div class="mt-8">
@@ -265,7 +266,9 @@
                     <span class="text-copper-400 italic">Truth, Healing,</span> and<br>
                     <span class="text-copper-400 italic">Restoration</span>
                 </h1>
-                <p class="reveal-on-scroll stagger-2 text-lg sm:text-xl text-cream-300 max-w-3xl mx-auto mb-12 leading-relaxed font-light px-6 sm:px-4">Helping men, couples, and leaders pursue integrity, healing, resilience, and lasting transformation through coaching, disclosure facilitation, Core Values Index coaching, and adventure-based experiences.</p>
+                <p class="reveal-on-scroll stagger-2 text-lg sm:text-xl text-cream-300 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+                    Helping men, couples, and leaders pursue integrity, healing, resilience, and lasting transformation through coaching, disclosure facilitation, Core Values Index coaching, and adventure-based experiences.
+                </p>
                 <div class="reveal-on-scroll stagger-3 flex flex-col sm:flex-row items-center justify-center gap-4">
                     <a href="#" onclick="navigateTo('schedule')" class="btn-primary px-8 py-4 rounded-lg text-base font-medium flex items-center gap-2">
                         Schedule a Consultation
@@ -275,7 +278,7 @@
                         Explore Your Journey
                     </a>
                 </div>
-                <div class="reveal-on-scroll stagger-4 mt-16 flex flex-wrap items-center justify-center gap-x-4 gap-y-3 sm:gap-x-8 text-sm text-cream-400 px-4">
+                <div class="reveal-on-scroll stagger-4 mt-16 flex items-center justify-center gap-8 text-sm text-cream-400">
                     <div class="flex items-center gap-2">
                         <span class="iconify w-4 h-4 text-copper-400" data-icon="lucide:shield-check"></span>
                         Confidential
@@ -299,17 +302,17 @@
                 <div class="text-center mb-16">
                     <span class="reveal-on-scroll text-xs uppercase tracking-[0.25em] text-copper-400 font-medium">Where Are You Starting?</span>
                     <h2 class="reveal-on-scroll stagger-1 font-serif text-3xl sm:text-4xl md:text-5xl text-cream-50 mt-4 tracking-tight">Every Journey Begins Somewhere</h2>
-                    <p class="reveal-on-scroll stagger-2 text-slate-300 mt-4 max-w-2xl mx-auto text-lg font-light">No matter where you find yourself right now, there is a path forward. You don't have to know every step — just the next one.</p>
+                    <p class="reveal-on-scroll stagger-2 text-slate-300 mt-4 max-w-2xl mx-auto text-lg font-light">No matter where you find yourself right now, there is a path forward. You don't have to know every step—just the next one.</p>
                 </div>
                 <div class="grid md:grid-cols-3 gap-6">
                     <!-- Men -->
-                    <div class="audience-card reveal-on-scroll stagger-1 group bg-navy-600/50 border border-navy-400/20 rounded-xl p-8 text-center transition-all duration-500 cursor-pointer hover:bg-navy-600/80" onclick="openService('integrity')">
+                    <div class="audience-card reveal-on-scroll stagger-1 bg-navy-600/50 border border-navy-400/20 rounded-xl p-8 text-center transition-all duration-500 cursor-pointer hover:bg-navy-600/80" onclick="openService('integrity')">
                         <div class="audience-icon w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-navy-400/20 transition-all duration-500">
                             <span class="iconify w-8 h-8 text-copper-400" data-icon="lucide:user"></span>
                         </div>
                         <h3 class="font-serif text-2xl text-cream-50 mb-3">Men</h3>
                         <p class="text-slate-300 font-light leading-relaxed">Freedom from unwanted sexual behaviors. Integrity. Purpose.</p>
-                        <div class="mt-6 text-copper-400 text-sm font-medium flex items-center justify-center gap-1 transition-opacity">
+                        <div class="mt-6 text-copper-400 text-sm font-medium flex items-center justify-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                             Learn more <span class="iconify w-4 h-4" data-icon="lucide:arrow-right"></span>
                         </div>
                     </div>
@@ -341,6 +344,7 @@
 
         <!-- The Path to the Summit -->
         <section class="py-24 md:py-32 px-6 bg-navy-600 relative overflow-hidden">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full roadmap-line opacity-20"></div>
             <div class="max-w-4xl mx-auto relative">
                 <div class="text-center mb-20">
                     <span class="reveal-on-scroll text-xs uppercase tracking-[0.25em] text-copper-400 font-medium">The Journey</span>
@@ -422,7 +426,7 @@
                         </div>
                         <div class="pt-1">
                             <h3 class="font-serif text-2xl text-copper-400 italic">The View From the Summit</h3>
-                            <p class="text-slate-300 font-light mt-1">Integrity restored. Trust rebuilt. Purpose reclaimed. This is the destination — and it's within reach.</p>
+                            <p class="text-slate-300 font-light mt-1">Integrity restored. Trust rebuilt. Purpose reclaimed. This is the destination—and it's within reach.</p>
                         </div>
                     </div>
                 </div>
@@ -440,7 +444,7 @@
                     <!-- Integrity Coaching -->
                     <div class="service-card reveal-on-scroll stagger-1 bg-navy-600/50 border border-navy-400/20 rounded-xl overflow-hidden transition-all duration-500 group cursor-pointer" onclick="openService('integrity')">
                         <div class="h-48 overflow-hidden">
-                            <img src="photos/pexels-mo-eid-1268975-5095808.jpg" alt="Mountain trail at dawn" class="service-card-img w-full h-full object-cover transition-transform duration-700">
+                            <img src="https://picsum.photos/seed/mountain-trail-dawn/600/400.jpg" alt="Mountain trail at dawn" class="service-card-img w-full h-full object-cover transition-transform duration-700">
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-3 mb-3">
@@ -456,7 +460,7 @@
                     <!-- Disclosure -->
                     <div class="service-card reveal-on-scroll stagger-2 bg-navy-600/50 border border-navy-400/20 rounded-xl overflow-hidden transition-all duration-500 group cursor-pointer" onclick="openService('disclosure')">
                         <div class="h-48 overflow-hidden">
-                            <img src="photos/pexels-pixabay-219962.jpg" alt="Mountain pass with light" class="service-card-img w-full h-full object-cover transition-transform duration-700">
+                            <img src="https://picsum.photos/seed/mountain-pass-light/600/400.jpg" alt="Mountain pass with light" class="service-card-img w-full h-full object-cover transition-transform duration-700">
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-3 mb-3">
@@ -472,14 +476,14 @@
                     <!-- Couples Recovery -->
                     <div class="service-card reveal-on-scroll stagger-3 bg-navy-600/50 border border-navy-400/20 rounded-xl overflow-hidden transition-all duration-500 group cursor-pointer" onclick="openService('couples')">
                         <div class="h-48 overflow-hidden">
-                            <img src="photos/pexels-taryn-elliott-4858586.jpg" alt="Calm lake reflection" class="service-card-img w-full h-full object-cover transition-transform duration-700">
+                            <img src="https://picsum.photos/seed/lake-reflection-calm/600/400.jpg" alt="Calm lake reflection" class="service-card-img w-full h-full object-cover transition-transform duration-700">
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-3 mb-3">
                                 <span class="iconify w-6 h-6 text-copper-400" data-icon="lucide:heart-handshake"></span>
                                 <h3 class="font-serif text-xl text-cream-50">Couples Recovery</h3>
                             </div>
-                            <p class="text-slate-300 font-light text-sm leading-relaxed mb-4">For couples navigating the difficult terrain of betrayal recovery — rebuilding trust, communication, and emotional connection.</p>
+                            <p class="text-slate-300 font-light text-sm leading-relaxed mb-4">For couples navigating the difficult terrain of betrayal recovery—rebuilding trust, communication, and emotional connection.</p>
                             <span class="text-copper-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
                                 Start Healing Together <span class="iconify w-4 h-4" data-icon="lucide:arrow-right"></span>
                             </span>
@@ -488,14 +492,14 @@
                     <!-- CVI -->
                     <div class="service-card reveal-on-scroll stagger-1 bg-navy-600/50 border border-navy-400/20 rounded-xl overflow-hidden transition-all duration-500 group cursor-pointer" onclick="openService('cvi')">
                         <div class="h-48 overflow-hidden">
-                            <img src="photos/pexels-harveyvillarino-4183049.jpg" alt="Compass top view" class="service-card-img w-full h-full object-cover transition-transform duration-700">
+                            <img src="https://picsum.photos/seed/compass-top-view/600/400.jpg" alt="Compass top view" class="service-card-img w-full h-full object-cover transition-transform duration-700">
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-3 mb-3">
                                 <span class="iconify w-6 h-6 text-copper-400" data-icon="lucide:compass"></span>
                                 <h3 class="font-serif text-xl text-cream-50">Core Values Index</h3>
                             </div>
-                            <p class="text-slate-300 font-light text-sm leading-relaxed mb-4">Discover your deepest drivers through the CVI assessment — clarity for leadership, relationships, and recovery.</p>
+                            <p class="text-slate-300 font-light text-sm leading-relaxed mb-4">Discover your deepest drivers through the CVI assessment—clarity for leadership, relationships, and recovery.</p>
                             <span class="text-copper-400 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
                                 Discover Your Design <span class="iconify w-4 h-4" data-icon="lucide:arrow-right"></span>
                             </span>
@@ -504,7 +508,7 @@
                     <!-- Adventure -->
                     <div class="service-card reveal-on-scroll stagger-2 bg-navy-600/50 border border-navy-400/20 rounded-xl overflow-hidden transition-all duration-500 group cursor-pointer sm:col-span-2 lg:col-span-2" onclick="openService('adventure')">
                         <div class="h-48 overflow-hidden">
-                            <img src="photos/pexels-robertkso-14448956.jpg" alt="Campfire under stars" class="service-card-img w-full h-full object-cover transition-transform duration-700">
+                            <img src="https://picsum.photos/seed/campfire-night-stars/800/400.jpg" alt="Campfire under stars" class="service-card-img w-full h-full object-cover transition-transform duration-700">
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-3 mb-3">
@@ -548,7 +552,7 @@
                         </div>
                         <div class="reveal-on-scroll stagger-4 bg-white rounded-xl p-6 border border-cream-300 shadow-sm hover:shadow-md transition-shadow">
                             <span class="iconify w-8 h-8 text-copper-500 mb-3" data-icon="lucide:book-open"></span>
-                            <h4 class="font-medium text-navy-500 text-sm">Pastoral Sex Addiction Professional</h4>
+                            <h4 class="font-medium text-navy-500 text-sm">Pastoral Recovery Leadership</h4>
                             <p class="text-slate-400 text-xs mt-1 font-light">Faith-integrated care</p>
                         </div>
                         <div class="reveal-on-scroll stagger-4 bg-white rounded-xl p-6 border border-cream-300 shadow-sm hover:shadow-md transition-shadow">
@@ -558,8 +562,8 @@
                         </div>
                         <div class="reveal-on-scroll stagger-5 bg-white rounded-xl p-6 border border-cream-300 shadow-sm hover:shadow-md transition-shadow">
                             <span class="iconify w-8 h-8 text-copper-500 mb-3" data-icon="lucide:cross"></span>
-                            <h4 class="font-medium text-navy-500 text-sm">Faith-Integrated Coaching</h4>
-                            <p class="text-slate-400 text-xs mt-1 font-light">The Firm Foundation</p>
+                            <h4 class="font-medium text-navy-500 text-sm">Faith-Integrated Coaching Available</h4>
+                            <p class="text-slate-400 text-xs mt-1 font-light">When requested</p>
                         </div>
                     </div>
                 </div>
@@ -572,7 +576,7 @@
                 <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <div class="reveal-on-scroll relative">
                         <div class="aspect-[3/4] rounded-xl overflow-hidden">
-                            <img src="Lance%20Crop.PNG" alt="Lance Baker" class="w-full h-full object-cover">
+                            <img src="https://picsum.photos/seed/outdoor-man-confident/600/800.jpg" alt="Lance Baker" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute -bottom-6 -right-6 bg-copper-400 text-white px-6 py-4 rounded-lg shadow-xl">
                             <span class="font-serif text-2xl italic">"The summit is within reach."</span>
@@ -582,8 +586,9 @@
                         <span class="reveal-on-scroll text-xs uppercase tracking-[0.25em] text-copper-400 font-medium">Your Guide</span>
                         <h2 class="reveal-on-scroll stagger-1 font-serif text-3xl sm:text-4xl text-cream-50 mt-4 tracking-tight">Meet Lance Baker</h2>
                         <div class="reveal-on-scroll stagger-2 mt-6 space-y-4 text-slate-300 font-light leading-relaxed">
-                            <p>With over three decades in law enforcement and years of dedicated recovery and coaching work, Lance Baker understands what it means to navigate difficult terrain.</p>
-                            <p>His experience, combined with professional coaching certification, board-certified mental health coaching credentials, and specialized training in disclosure facilitation, gives him a unique ability to guide others through their most challenging journeys.</p>
+                            <p>With over three decades in law enforcement and years of dedicated recovery and coaching work, Lance Baker understands what it means to navigate difficult terrain—both professionally and personally.</p>
+                            <p>He's walked the path of restoration himself. That experience, combined with professional coaching certification, board-certified mental health coaching credentials, and specialized training in disclosure facilitation, gives him a unique ability to guide others through their most challenging journeys.</p>
+                            <p>Lance's approach is never clinical. It's the approach of someone who has stood at the base of the mountain, felt the weight of the climb, and knows what it takes to reach the top.</p>
                         </div>
                         <div class="reveal-on-scroll stagger-3 mt-8 flex flex-wrap gap-4">
                             <a href="#" onclick="navigateTo('about')" class="btn-secondary px-6 py-3 rounded-lg text-sm font-medium">Read Full Story</a>
@@ -597,7 +602,7 @@
         <!-- Final CTA -->
         <section class="relative py-24 md:py-32 px-6 overflow-hidden">
             <div class="absolute inset-0">
-                <img src="photos/picsum-sunrise-mountain-peak-830-1920x800.jpg" alt="Sunrise mountain peak" class="w-full h-full object-cover">
+                <img src="https://picsum.photos/seed/sunrise-mountain-peak/1920/800.jpg" alt="Sunrise mountain peak" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-navy-500/80"></div>
             </div>
             <div class="relative z-10 max-w-3xl mx-auto text-center">
@@ -621,7 +626,7 @@
     <main id="page-about" class="page-section">
         <section class="relative pt-32 pb-20 px-6">
             <div class="absolute inset-0">
-                <img src="photos/pexels-andrejcook-542704.jpg" alt="Mountain ridge" class="w-full h-full object-cover">
+                <img src="https://picsum.photos/seed/mountain-ridge-golden/1920/800.jpg" alt="Mountain ridge" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-b from-navy-500/70 to-navy-500"></div>
             </div>
             <div class="relative z-10 max-w-4xl mx-auto text-center">
@@ -635,15 +640,15 @@
                 <div class="grid md:grid-cols-5 gap-12 items-start">
                     <div class="md:col-span-2 reveal-on-scroll">
                         <div class="aspect-[3/4] rounded-xl overflow-hidden">
-                            <img src="Lance%20Crop.PNG" alt="Lance Baker portrait" class="w-full h-full object-cover">
+                            <img src="https://picsum.photos/seed/guide-portrait-outdoor/600/800.jpg" alt="Lance Baker portrait" class="w-full h-full object-cover">
                         </div>
                     </div>
                     <div class="md:col-span-3 space-y-6">
                         <div class="reveal-on-scroll text-slate-300 font-light leading-relaxed space-y-4">
-                            <p>Lance Baker spent over thirty years in law enforcement — a career that taught him about pressure, integrity, consequences, and the human capacity for both failure and redemption.</p>
-                            <p>The principles of recovery mirror the principles of any great expedition: honest assessment of where you are, a clear picture of where you're going, the right tools for the terrain, and someone who knows the path walking beside you.</p>
-                            <p>Lance holds credentials as a Board Certified Mental Health Coach, is a Pastoral Sex Addiction Professional, has completed specialized training in disclosure facilitation, and is a Core Values Index practitioner.</p>
-                            <p>Lance's approach is shaped by his faith, his experience, and his conviction that no one is beyond redemption.  Lance is passionate about helping individuals and couples move from betrayal and brokenness to truth, healing, and restored connection.</p>
+                            <p>Lance Baker spent over thirty years in law enforcement—a career that taught him about pressure, integrity, consequences, and the human capacity for both failure and redemption.</p>
+                            <p>Through his own journey of restoration, Lance discovered that the principles of recovery mirror the principles of any great expedition: honest assessment of where you are, a clear picture of where you're going, the right tools for the terrain, and someone who knows the path walking beside you.</p>
+                            <p>That discovery led him to professional coaching. He now holds credentials as a Board Certified Mental Health Coach, has completed specialized training in disclosure facilitation, and is a certified Core Values Index practitioner.</p>
+                            <p>Lance's approach is shaped by his faith, his experience, and his conviction that no one is beyond redemption. When clients request it, he integrates faith-based perspectives into the coaching process—but he serves every client with the same respect, regardless of their beliefs.</p>
                         </div>
                         <div class="reveal-on-scroll stagger-2 pt-4 border-t border-navy-400/20">
                             <h3 class="font-serif text-xl text-cream-50 mb-4">Credentials & Training</h3>
@@ -654,7 +659,11 @@
                                 </li>
                                 <li class="flex items-start gap-3 text-slate-300 text-sm font-light">
                                     <span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check-circle"></span>
-                                    Core Values Index Practitioner
+                                    Professional Coach Certification
+                                </li>
+                                <li class="flex items-start gap-3 text-slate-300 text-sm font-light">
+                                    <span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check-circle"></span>
+                                    Core Values Index Certified Practitioner
                                 </li>
                                 <li class="flex items-start gap-3 text-slate-300 text-sm font-light">
                                     <span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check-circle"></span>
@@ -666,7 +675,7 @@
                                 </li>
                                 <li class="flex items-start gap-3 text-slate-300 text-sm font-light">
                                     <span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check-circle"></span>
-                                    Pastoral Sex Addiction Professional (PSAP)
+                                    Pastoral Recovery Ministry Leadership
                                 </li>
                             </ul>
                         </div>
@@ -681,6 +690,138 @@
         </section>
     </main>
 
+
+    <!-- ========== RESOURCES PAGE ========== -->
+    <main id="page-resources" class="page-section">
+        <section class="pt-32 pb-16 px-6 bg-navy-500">
+            <div class="max-w-5xl mx-auto text-center">
+                <span class="reveal-on-scroll text-xs uppercase tracking-[0.25em] text-copper-400 font-medium">Resource Center</span>
+                <h1 class="reveal-on-scroll stagger-1 font-serif text-4xl sm:text-5xl text-cream-50 mt-4 tracking-tight">Tools for the Journey</h1>
+                <p class="reveal-on-scroll stagger-2 text-slate-300 mt-4 text-lg font-light max-w-2xl mx-auto">Articles, guides, and recommendations to support your path forward.</p>
+            </div>
+        </section>
+        <section class="py-16 px-6 bg-navy-600">
+            <div class="max-w-5xl mx-auto">
+                <!-- Articles -->
+                <div class="mb-16">
+                    <h2 class="reveal-on-scroll font-serif text-2xl text-cream-50 mb-8 flex items-center gap-3">
+                        <span class="iconify w-6 h-6 text-copper-400" data-icon="lucide:file-text"></span> Articles
+                    </h2>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="reveal-on-scroll stagger-1 bg-navy-500/50 border border-navy-400/20 rounded-xl p-6 hover:border-copper-400/30 transition-colors cursor-pointer">
+                            <span class="text-xs text-copper-400 uppercase tracking-wider">Integrity</span>
+                            <h3 class="font-serif text-lg text-cream-50 mt-2">Why Integrity Coaching Is Different From Therapy</h3>
+                            <p class="text-slate-400 text-sm font-light mt-2">Understanding the distinction between coaching and counseling—and why it matters for your recovery.</p>
+                            <span class="text-copper-400 text-xs mt-3 inline-block">Coming Soon</span>
+                        </div>
+                        <div class="reveal-on-scroll stagger-2 bg-navy-500/50 border border-navy-400/20 rounded-xl p-6 hover:border-copper-400/30 transition-colors cursor-pointer">
+                            <span class="text-xs text-copper-400 uppercase tracking-wider">Disclosure</span>
+                            <h3 class="font-serif text-lg text-cream-50 mt-2">What to Expect From a Therapeutic Disclosure</h3>
+                            <p class="text-slate-400 text-sm font-light mt-2">A guide for both partners preparing for the disclosure process.</p>
+                            <span class="text-copper-400 text-xs mt-3 inline-block">Coming Soon</span>
+                        </div>
+                        <div class="reveal-on-scroll stagger-3 bg-navy-500/50 border border-navy-400/20 rounded-xl p-6 hover:border-copper-400/30 transition-colors cursor-pointer">
+                            <span class="text-xs text-copper-400 uppercase tracking-wider">Leadership</span>
+                            <h3 class="font-serif text-lg text-cream-50 mt-2">The Core Values Index: Why It Outperforms Personality Tests</h3>
+                            <p class="text-slate-400 text-sm font-light mt-2">How the CVI measures what truly drives you—not just how you behave.</p>
+                            <span class="text-copper-400 text-xs mt-3 inline-block">Coming Soon</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recommended Books -->
+                <div class="mb-16">
+                    <h2 class="reveal-on-scroll font-serif text-2xl text-cream-50 mb-8 flex items-center gap-3">
+                        <span class="iconify w-6 h-6 text-copper-400" data-icon="lucide:book-open"></span> Recommended Reading
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="reveal-on-scroll stagger-1 flex items-start gap-4 p-4 rounded-lg border border-navy-400/10 hover:border-copper-400/20 transition-colors">
+                            <span class="iconify w-8 h-8 text-copper-400/60 flex-shrink-0" data-icon="lucide:book"></span>
+                            <div>
+                                <h4 class="text-cream-100 text-sm font-medium">Every Man's Battle</h4>
+                                <p class="text-slate-400 text-xs font-light mt-1">Stephen Arterburn & Fred Stoeker</p>
+                            </div>
+                        </div>
+                        <div class="reveal-on-scroll stagger-2 flex items-start gap-4 p-4 rounded-lg border border-navy-400/10 hover:border-copper-400/20 transition-colors">
+                            <span class="iconify w-8 h-8 text-copper-400/60 flex-shrink-0" data-icon="lucide:book"></span>
+                            <div>
+                                <h4 class="text-cream-100 text-sm font-medium">How to Help Your Spouse Heal</h4>
+                                <p class="text-slate-400 text-xs font-light mt-1">Linda J. MacDonald</p>
+                            </div>
+                        </div>
+                        <div class="reveal-on-scroll stagger-3 flex items-start gap-4 p-4 rounded-lg border border-navy-400/10 hover:border-copper-400/20 transition-colors">
+                            <span class="iconify w-8 h-8 text-copper-400/60 flex-shrink-0" data-icon="lucide:book"></span>
+                            <div>
+                                <h4 class="text-cream-100 text-sm font-medium">Out of the Doghouse</h4>
+                                <p class="text-slate-400 text-xs font-light mt-1">Dr. Robert Weiss & Jennifer Schneider</p>
+                            </div>
+                        </div>
+                        <div class="reveal-on-scroll stagger-4 flex items-start gap-4 p-4 rounded-lg border border-navy-400/10 hover:border-copper-400/20 transition-colors">
+                            <span class="iconify w-8 h-8 text-copper-400/60 flex-shrink-0" data-icon="lucide:book"></span>
+                            <div>
+                                <h4 class="text-cream-100 text-sm font-medium">The Core Values Index Report</h4>
+                                <p class="text-slate-400 text-xs font-light mt-1">Taylor Protocols (provided with CVI coaching)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ -->
+                <div>
+                    <h2 class="reveal-on-scroll font-serif text-2xl text-cream-50 mb-8 flex items-center gap-3">
+                        <span class="iconify w-6 h-6 text-copper-400" data-icon="lucide:help-circle"></span> Frequently Asked Questions
+                    </h2>
+                    <div class="space-y-3">
+                        <div class="faq-item reveal-on-scroll stagger-1 bg-navy-500/50 border border-navy-400/20 rounded-lg overflow-hidden">
+                            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-4 text-left">
+                                <span class="text-cream-100 text-sm font-medium pr-4">Is coaching the same as therapy?</span>
+                                <span class="iconify faq-chevron w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-down"></span>
+                            </button>
+                            <div class="faq-answer px-6 pb-0">
+                                <p class="text-slate-300 text-sm font-light leading-relaxed pb-4">No. Coaching focuses on present goals and future direction, while therapy often addresses past trauma and clinical diagnoses. Coaching is action-oriented and forward-focused. If at any point it becomes clear that therapy would be more appropriate, I will help connect you with a qualified therapist.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item reveal-on-scroll stagger-2 bg-navy-500/50 border border-navy-400/20 rounded-lg overflow-hidden">
+                            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-4 text-left">
+                                <span class="text-cream-100 text-sm font-medium pr-4">Do I have to be a person of faith to work with you?</span>
+                                <span class="iconify faq-chevron w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-down"></span>
+                            </button>
+                            <div class="faq-answer px-6 pb-0">
+                                <p class="text-slate-300 text-sm font-light leading-relaxed pb-4">Not at all. Faith-integrated coaching is available for those who request it, but it is never imposed. Every client is served with the same respect, professionalism, and care regardless of their beliefs.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item reveal-on-scroll stagger-3 bg-navy-500/50 border border-navy-400/20 rounded-lg overflow-hidden">
+                            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-4 text-left">
+                                <span class="text-cream-100 text-sm font-medium pr-4">How long does the coaching process typically take?</span>
+                                <span class="iconify faq-chevron w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-down"></span>
+                            </button>
+                            <div class="faq-answer px-6 pb-0">
+                                <p class="text-slate-300 text-sm font-light leading-relaxed pb-4">It varies. Some clients find significant clarity in a few sessions, while others engage for several months. We'll discuss a realistic timeline during your consultation and adjust as needed. The goal is genuine transformation, not a prescribed number of sessions.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item reveal-on-scroll stagger-4 bg-navy-500/50 border border-navy-400/20 rounded-lg overflow-hidden">
+                            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-4 text-left">
+                                <span class="text-cream-100 text-sm font-medium pr-4">Is everything I share confidential?</span>
+                                <span class="iconify faq-chevron w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-down"></span>
+                            </button>
+                            <div class="faq-answer px-6 pb-0">
+                                <p class="text-slate-300 text-sm font-light leading-relaxed pb-4">Absolutely. All coaching conversations are completely confidential. The only exceptions are those required by law (imminent harm to self or others), which would always be discussed with you first whenever possible.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item reveal-on-scroll stagger-5 bg-navy-500/50 border border-navy-400/20 rounded-lg overflow-hidden">
+                            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-4 text-left">
+                                <span class="text-cream-100 text-sm font-medium pr-4">Do you work with clients remotely?</span>
+                                <span class="iconify faq-chevron w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-down"></span>
+                            </button>
+                            <div class="faq-answer px-6 pb-0">
+                                <p class="text-slate-300 text-sm font-light leading-relaxed pb-4">Yes. Most coaching sessions are conducted via secure video conference, making it accessible regardless of your location. In-person sessions may be available depending on circumstances and location.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
     <!-- ========== CONTACT PAGE ========== -->
     <main id="page-contact" class="page-section">
         <section class="pt-32 pb-16 px-6 bg-navy-500">
@@ -693,43 +834,40 @@
         <section class="py-16 px-6 bg-navy-600">
             <div class="max-w-5xl mx-auto grid lg:grid-cols-5 gap-12">
                 <div class="lg:col-span-3">
-                    <form id="contactForm" class="space-y-5" action="https://formsubmit.co/jamesleehudsoniv@gmail.com" method="POST">
-                        <div>
-                            <input type="hidden" name="_next" value="https://adventurecoaching.com/thank-you" />
-                        </div>
+                    <form id="contactForm" onsubmit="handleContactForm(event)" class="space-y-5" action="https://formsubmit.co/anawesomeemai@protonmail.com" method="POST">
                         <div class="grid sm:grid-cols-2 gap-5">
                             <div>
                                 <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">First Name</label>
-                                <input type="text" name="first_name" required class="form-input w-full px-4 py-3 rounded-lg text-sm" placeholder="John">
+                                <input type="text" required class="form-input w-full px-4 py-3 rounded-lg text-sm" placeholder="John">
                             </div>
                             <div>
                                 <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">Last Name</label>
-                                <input type="text" name="last_name" required class="form-input w-full px-4 py-3 rounded-lg text-sm" placeholder="Doe">
+                                <input type="text" required class="form-input w-full px-4 py-3 rounded-lg text-sm" placeholder="Doe">
                             </div>
                         </div>
                         <div>
                             <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">Email</label>
-                            <input type="email" name="email" required class="form-input w-full px-4 py-3 rounded-lg text-sm" placeholder="john@example.com">
+                            <input type="email" required class="form-input w-full px-4 py-3 rounded-lg text-sm" placeholder="john@example.com">
                         </div>
                         <div>
                             <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">Phone (Optional)</label>
-                            <input type="tel" name="phone" class="form-input w-full px-4 py-3 rounded-lg text-sm" placeholder="(555) 123-4567">
+                            <input type="tel" class="form-input w-full px-4 py-3 rounded-lg text-sm" placeholder="(555) 123-4567">
                         </div>
                         <div>
                             <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">What can I help you with?</label>
-                            <select name="topic" class="form-input w-full px-4 py-3 rounded-lg text-sm">
+                            <select class="form-input w-full px-4 py-3 rounded-lg text-sm">
                                 <option value="">Select a topic...</option>
-                                <option value="Integrity Coaching">Integrity Coaching</option>
-                                <option value="Disclosure & Relational Repair">Disclosure & Relational Repair</option>
-                                <option value="Couples Recovery">Couples Recovery</option>
-                                <option value="Core Values Index">Core Values Index</option>
-                                <option value="Adventure Experiences">Adventure Experiences</option>
-                                <option value="General Question">General Question</option>
+                                <option>Integrity Coaching</option>
+                                <option>Disclosure & Relational Repair</option>
+                                <option>Couples Recovery</option>
+                                <option>Core Values Index</option>
+                                <option>Adventure Experiences</option>
+                                <option>General Question</option>
                             </select>
                         </div>
                         <div>
                             <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">Message</label>
-                            <textarea name="message" rows="5" required class="form-input w-full px-4 py-3 rounded-lg text-sm resize-none" placeholder="Share what's on your mind..."></textarea>
+                            <textarea rows="5" required class="form-input w-full px-4 py-3 rounded-lg text-sm resize-none" placeholder="Share what's on your mind..."></textarea>
                         </div>
                         <button type="submit" class="btn-primary px-8 py-3.5 rounded-lg text-sm font-medium w-full sm:w-auto">
                             Send Message
@@ -752,7 +890,7 @@
                     </div>
                     <div class="border-t border-navy-400/20 pt-8">
                         <h3 class="font-serif text-xl text-cream-50 mb-4">Prefer to Jump Straight to Scheduling?</h3>
-                        <p class="text-slate-400 text-sm font-light mb-4">For Integrity Coaching, Couples Recovery, Disclosure & Relational Repair Services, and CVI assessments, you can book directly.</p>
+                        <p class="text-slate-400 text-sm font-light mb-4">For Integrity Coaching, Couples Recovery, and CVI assessments, you can book directly.</p>
                         <a href="#" onclick="navigateTo('schedule')" class="btn-primary inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium">
                             Schedule Now <span class="iconify w-4 h-4" data-icon="lucide:arrow-right"></span>
                         </a>
@@ -796,19 +934,19 @@
                     <h2 class="reveal-on-scroll font-serif text-2xl text-cream-50 mb-2">Book Directly</h2>
                     <p class="reveal-on-scroll stagger-1 text-slate-400 text-sm font-light mb-8">Select a service to schedule your consultation through our online calendar.</p>
                     <div class="grid sm:grid-cols-3 gap-6">
-                        <div class="reveal-on-scroll stagger-1 bg-navy-500/50 border border-navy-400/20 rounded-xl p-6 text-center hover:border-copper-400/40 transition-all group cursor-pointer" onclick="showToast('Calendly integration would open here for Integrity Coaching.')">
+                        <div class="reveal-on-scroll stagger-1 bg-navy-500/50 border border-navy-400/20 rounded-xl p-6 text-center hover:border-copper-400/40 transition-all group cursor-pointer" onclick="showToast('Calendly/Acuity integration would open here for Integrity Coaching.')">
                             <span class="iconify w-10 h-10 text-copper-400 mx-auto mb-4" data-icon="lucide:shield-check"></span>
                             <h3 class="font-serif text-lg text-cream-50 mb-2">Integrity Coaching</h3>
                             <p class="text-slate-400 text-xs font-light mb-4">Confidential consultation to discuss your journey toward integrity.</p>
                             <span class="btn-primary inline-block px-5 py-2.5 rounded-lg text-xs font-medium">Book Now</span>
                         </div>
-                        <div class="reveal-on-scroll stagger-2 bg-navy-500/50 border border-navy-400/20 rounded-xl p-6 text-center hover:border-copper-400/40 transition-all group cursor-pointer" onclick="showToast('Calendly integration would open here for Couples Recovery.')">
+                        <div class="reveal-on-scroll stagger-2 bg-navy-500/50 border border-navy-400/20 rounded-xl p-6 text-center hover:border-copper-400/40 transition-all group cursor-pointer" onclick="showToast('Calendly/Acuity integration would open here for Couples Recovery.')">
                             <span class="iconify w-10 h-10 text-copper-400 mx-auto mb-4" data-icon="lucide:heart-handshake"></span>
                             <h3 class="font-serif text-lg text-cream-50 mb-2">Couples Recovery</h3>
                             <p class="text-slate-400 text-xs font-light mb-4">Initial consultation for couples ready to begin healing together.</p>
                             <span class="btn-primary inline-block px-5 py-2.5 rounded-lg text-xs font-medium">Book Now</span>
                         </div>
-                        <div class="reveal-on-scroll stagger-3 bg-navy-500/50 border border-navy-400/20 rounded-xl p-6 text-center hover:border-copper-400/40 transition-all group cursor-pointer" onclick="showToast('Calendly integration would open here for CVI Assessment.')">
+                        <div class="reveal-on-scroll stagger-3 bg-navy-500/50 border border-navy-400/20 rounded-xl p-6 text-center hover:border-copper-400/40 transition-all group cursor-pointer" onclick="showToast('Calendly/Acuity integration would open here for CVI Assessment.')">
                             <span class="iconify w-10 h-10 text-copper-400 mx-auto mb-4" data-icon="lucide:compass"></span>
                             <h3 class="font-serif text-lg text-cream-50 mb-2">Core Values Index</h3>
                             <p class="text-slate-400 text-xs font-light mb-4">Schedule your CVI assessment and professional debrief session.</p>
@@ -824,11 +962,12 @@
                                 <span class="iconify w-8 h-8 text-copper-400" data-icon="lucide:door-open"></span>
                                 <h3 class="font-serif text-xl text-cream-50">Disclosure & Relational Repair</h3>
                             </div>
-                            <p class="text-slate-300 text-sm font-light leading-relaxed mb-4">Guided disclosure and relational repair for couples navigating the path toward truth and healing.</p>
+                            <p class="text-slate-300 text-sm font-light leading-relaxed mb-4">Because each disclosure situation is unique, we begin with a confidential consultation rather than direct online booking. This ensures we can properly assess your needs and coordinate the right approach.</p>
+                            <p class="text-slate-400 text-xs font-light italic">No direct online booking is available for disclosure services.</p>
                         </div>
                         <div class="text-center md:text-left">
-                            <a href="#" onclick="showToast('Calendly integration would open here for Disclosure Consultations.')" class="btn-secondary inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium">
-                                Book a Disclosure Consultation
+                            <a href="#" onclick="navigateTo('contact')" class="btn-secondary inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium">
+                                Request a Disclosure Consultation
                                 <span class="iconify w-4 h-4" data-icon="lucide:arrow-right"></span>
                             </a>
                         </div>
@@ -845,29 +984,23 @@
                             <p class="text-slate-300 text-sm font-light leading-relaxed mb-2">Upcoming experiences are being planned now. Join the interest list to be the first to know when dates and locations are announced.</p>
                             <p class="text-copper-400 text-sm font-medium">Upcoming Experiences Coming Soon</p>
                         </div>
-                        <form action="https://formsubmit.co/anawesomeemail@protonmail.com" method="POST" class="space-y-4">
-    <!-- FormSubmit config -->
-    <input type="hidden" name="_subject" value="New Interest List Signup!">
-    <input type="hidden" name="_next" value="https://adventurecoaching.com/thank-you">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="_honey" style="display:none">
-
-    <input type="text" name="name" required placeholder="Your Name" class="form-input w-full px-4 py-2.5 rounded-lg text-sm">
-    <input type="email" name="email" required placeholder="Email Address" class="form-input w-full px-4 py-2.5 rounded-lg text-sm">
-    <input type="tel" name="phone" placeholder="Phone (Optional)" class="form-input w-full px-4 py-2.5 rounded-lg text-sm">
-    <div>
-        <label class="block text-xs text-slate-400 mb-2 font-light">Activities of Interest</label>
-        <div class="grid grid-cols-2 gap-2">
-            <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" name="activities" value="Hiking" class="accent-copper-400"> Hiking</label>
-            <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" name="activities" value="Kayaking" class="accent-copper-400"> Kayaking</label>
-            <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" name="activities" value="Fishing" class="accent-copper-400"> Fishing</label>
-            <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" name="activities" value="Camping" class="accent-copper-400"> Camping</label>
-            <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" name="activities" value="Leadership" class="accent-copper-400"> Leadership</label>
-            <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" name="activities" value="Recovery" class="accent-copper-400"> Recovery</label>
-        </div>
-    </div>
-    <button type="submit" class="btn-primary w-full px-6 py-2.5 rounded-lg text-sm font-medium">Join the Interest List</button>
-</form>
+                        <form onsubmit="handleInterestForm(event)" class="space-y-4">
+                            <input type="text" required placeholder="Your Name" class="form-input w-full px-4 py-2.5 rounded-lg text-sm">
+                            <input type="email" required placeholder="Email Address" class="form-input w-full px-4 py-2.5 rounded-lg text-sm">
+                            <input type="tel" placeholder="Phone (Optional)" class="form-input w-full px-4 py-2.5 rounded-lg text-sm">
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-2 font-light">Activities of Interest</label>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" class="accent-copper-400"> Hiking</label>
+                                    <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" class="accent-copper-400"> Kayaking</label>
+                                    <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" class="accent-copper-400"> Fishing</label>
+                                    <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" class="accent-copper-400"> Camping</label>
+                                    <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" class="accent-copper-400"> Leadership</label>
+                                    <label class="flex items-center gap-2 text-sm text-cream-200 cursor-pointer"><input type="checkbox" class="accent-copper-400"> Recovery</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-primary w-full px-6 py-2.5 rounded-lg text-sm font-medium">Join the Interest List</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -881,7 +1014,7 @@
     <div id="service-integrity" class="overlay-panel">
         <div class="relative">
             <div class="h-80 relative">
-                <img src="photos/pexels-mo-eid-1268975-5095808.jpg" alt="Forest trail path" class="w-full h-full object-cover">
+                <img src="https://picsum.photos/seed/trail-forest-path/1920/800.jpg" alt="Forest trail path" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-b from-navy-500/50 to-navy-500"></div>
                 <button onclick="closeService()" class="absolute top-6 right-6 w-12 h-12 rounded-full bg-navy-500/60 backdrop-blur-sm border border-navy-400/30 flex items-center justify-center text-cream-200 hover:text-copper-400 hover:border-copper-400/40 transition-all z-10">
                     <span class="iconify w-6 h-6" data-icon="lucide:x"></span>
@@ -897,21 +1030,21 @@
                         <h2 class="font-serif text-2xl text-cream-50 mb-6">Who This Is For</h2>
                         <ul class="space-y-3">
                             <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Men struggling with pornography or unwanted sexual behaviors</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Men caught in patterns of compulsive sexual behavior</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Men who have tried to stop on their own without lasting success</li>
                             <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Men who want to rebuild trust with their spouse or family</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Men experiencing personal, spiritual, or professional consequences from sexual patterns</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Leaders who recognize their behavior is undermining their influence</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Men in recovery who want to go deeper and build a sustainable life of integrity</li>
                         </ul>
                     </div>
                     <div>
-                        <h2 class="font-serif text-2xl text-cream-50 mb-6">Areas of Focus</h2>
+                        <h2 class="font-serif text-2xl text-cream-50 mb-6">What You'll Gain</h2>
                         <ul class="space-y-3">
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Understanding the roots of unwanted behaviors</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Developing practical relapse prevention strategies</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Building emotional regulation and coping skills</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Establishing healthy boundaries</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Strengthening integrity, accountability, and values alignment</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Rebuilding trust and improving relationships</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Strengthening identity, purpose, and personal growth</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Honest self-awareness and emotional intelligence</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>A clear understanding of your triggers and patterns</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Proven relapse prevention strategies</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Healthy accountability structures</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Renewed purpose and confidence</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Healthier relationships and communication</li>
                         </ul>
                     </div>
                 </div>
@@ -941,16 +1074,37 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="mt-16">
-                    <p class="text-slate-300 text-lg font-light mt-4 max-w-4xl leading-relaxed">My coaching approach is designed to help clients move beyond simply managing symptoms and instead develop a deeper understanding of the underlying factors that contribute to their behaviors. Together, we identify triggers, emotional patterns, beliefs, coping mechanisms, and relational dynamics that may be fueling destructive cycles.</p>
-                    <p class="text-slate-300 text-lg font-light mt-4 max-w-4xl leading-relaxed">Clients are guided through a structured process of self-awareness, accountability, emotional growth, and personal transformation.</p>
-                    <p class="text-slate-300 text-lg font-light mt-4 max-w-4xl leading-relaxed">Drawing from years of experience facilitating men's recovery groups and helping individuals pursue freedom from unwanted sexual behaviors, I provide a supportive, nonjudgmental environment where clients can pursue lasting change and personal growth.</p>
-                    <p class="text-slate-300 text-lg font-light mt-4 max-w-4xl leading-relaxed">The goal is not simply abstinence from unwanted behaviors. The goal is helping men build lives characterized by integrity, authenticity, healthy relationships, and freedom.</p>
+                    <h2 class="font-serif text-2xl text-cream-50 mb-6">Frequently Asked Questions</h2>
+                    <div class="space-y-3">
+                        <div class="faq-item bg-navy-600/50 border border-navy-400/20 rounded-lg overflow-hidden">
+                            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-4 text-left">
+                                <span class="text-cream-100 text-sm font-medium pr-4">Is this a 12-step program?</span>
+                                <span class="iconify faq-chevron w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-down"></span>
+                            </button>
+                            <div class="faq-answer px-6 pb-0"><p class="text-slate-300 text-sm font-light leading-relaxed pb-4">No. While we may incorporate elements that complement 12-step work, this is a coaching process focused on your specific goals, not a group program. Many clients find that coaching alongside other recovery support creates the strongest foundation.</p></div>
+                        </div>
+                        <div class="faq-item bg-navy-600/50 border border-navy-400/20 rounded-lg overflow-hidden">
+                            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-4 text-left">
+                                <span class="text-cream-100 text-sm font-medium pr-4">What if I'm also seeing a therapist?</span>
+                                <span class="iconify faq-chevron w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-down"></span>
+                            </button>
+                            <div class="faq-answer px-6 pb-0"><p class="text-slate-300 text-sm font-light leading-relaxed pb-4">That's great. Coaching and therapy work well together. With your permission, we can coordinate to ensure your coaching aligns with and supports your therapeutic work.</p></div>
+                        </div>
+                        <div class="faq-item bg-navy-600/50 border border-navy-400/20 rounded-lg overflow-hidden">
+                            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-4 text-left">
+                                <span class="text-cream-100 text-sm font-medium pr-4">How often do we meet?</span>
+                                <span class="iconify faq-chevron w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-down"></span>
+                            </button>
+                            <div class="faq-answer px-6 pb-0"><p class="text-slate-300 text-sm font-light leading-relaxed pb-4">Typically weekly or biweekly, depending on your needs and the intensity of the season you're in. We'll find the rhythm that serves you best.</p></div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="mt-16 text-center p-10 bg-navy-600/50 border border-navy-400/20 rounded-xl">
                     <h3 class="font-serif text-2xl text-cream-50 mb-3">Ready to Begin?</h3>
-                    <p class="text-slate-300 font-light mb-6">The first step is a confidential consultation. No pressure, no commitment — just a conversation about where you are and where you want to go.</p>
+                    <p class="text-slate-300 font-light mb-6">The first step is a confidential consultation. No pressure, no commitment—just a conversation about where you are and where you want to go.</p>
                     <a href="#" onclick="closeService();navigateTo('schedule')" class="btn-primary inline-flex items-center gap-2 px-8 py-4 rounded-lg text-base font-medium">
                         Schedule Coaching Consultation <span class="iconify w-5 h-5" data-icon="lucide:arrow-right"></span>
                     </a>
@@ -963,7 +1117,7 @@
     <div id="service-disclosure" class="overlay-panel">
         <div class="relative">
             <div class="h-80 relative">
-                <img src="photos/pexels-pixabay-219962.jpg" alt="Light breaking through mountains" class="w-full h-full object-cover">
+                <img src="https://picsum.photos/seed/mountain-light-break/1920/800.jpg" alt="Light breaking through mountains" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-b from-navy-500/50 to-navy-500"></div>
                 <button onclick="closeService()" class="absolute top-6 right-6 w-12 h-12 rounded-full bg-navy-500/60 backdrop-blur-sm border border-navy-400/30 flex items-center justify-center text-cream-200 hover:text-copper-400 hover:border-copper-400/40 transition-all z-10">
                     <span class="iconify w-6 h-6" data-icon="lucide:x"></span>
@@ -972,35 +1126,20 @@
             <div class="max-w-4xl mx-auto px-6 -mt-20 relative z-10 pb-20">
                 <span class="text-xs uppercase tracking-[0.25em] text-copper-400 font-medium">Service</span>
                 <h1 class="font-serif text-4xl sm:text-5xl text-cream-50 mt-2 tracking-tight">Disclosure &<br>Relational Repair</h1>
-                <p class="text-slate-300 text-lg font-light mt-4 max-w-2xl leading-relaxed">The Rite of Truth & Relational Repair Process — a guided, structured framework designed to help couples move through disclosure with greater clarity, support, and intentionality.</p>
+                <p class="text-slate-300 text-lg font-light mt-4 max-w-2xl leading-relaxed">The Rite of Truth & Relational Repair Process—a guided, structured approach to honest disclosure that creates safety and lays the foundation for genuine healing.</p>
 
-                <div class="mt-16 grid md:grid-cols-2 gap-12">
-                    <div>
-                        <h2 class="font-serif text-2xl text-cream-50 mb-6">Truth. Accountability. Healing.</h2>
+                <div class="mt-16">
+                    <h2 class="font-serif text-2xl text-cream-50 mb-6">Why Disclosure Matters</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
                         <div class="text-slate-300 font-light leading-relaxed space-y-4 text-sm">
-                            <p>One of the most difficult and important steps in relational recovery following sexual betrayal is the disclosure process. As a Certified Disclosure Guide Candidate, I assist men and couples in navigating this process with honesty, structure, preparation, and care.</p>
-                            <p>Many individuals attempt disclosure without adequate preparation, often causing additional confusion, trauma, and mistrust. My role is to help create a process that promotes truth, accountability, emotional safety, and relational healing.</p>
+                            <p>Secrets thrive in darkness. When betrayal has occurred, the path to restoration requires bringing the truth into the light—but in a way that is guided, safe, and purposeful.</p>
+                            <p>Poorly handled disclosure can cause more damage than the original betrayal. That's why professional guidance is essential.</p>
                         </div>
-                    </div>                    
-                    <div>
                         <div class="text-slate-300 font-light leading-relaxed space-y-4 text-sm">
-                            <h2 class="font-serif text-2xl text-cream-50 mb-6">Typical Services Include:</h2>
-                            <ul class="space-y-3">
-                                <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Individual preparation for the offending partner</li>
-                                <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Development of a formal disclosure document</li>
-                                <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Clarification and organization of disclosure information</li>
-                                <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Timeline development and fact verification</li>
-                                <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Guidance regarding appropriate transparency and accountability</li>
-                                <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Coordination with therapists and treatment professionals when appropriate</li>
-                                <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Preparation for anticipated emotional responses</li>
-                                <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Disclosure presentation support</li>
-                                <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Post-disclosure support and recovery planning</li>
-                            </ul>
+                            <p>A well-facilitated disclosure gives the injured partner the information they need to make informed decisions about their future, while also creating a framework for the betraying partner to take full responsibility.</p>
+                            <p>This process honors both people and prioritizes safety above all.</p>
                         </div>
                     </div>
-                </div>
-                <div class="mt-16">
-                    <p class="text-slate-300 text-lg font-light mt-4 max-w-4xl leading-relaxed">For couples, the disclosure process is not simply about revealing information. It is about creating a truthful foundation from which healing, trust rebuilding, and meaningful relational repair can begin.</p>
                 </div>
 
                 <div class="mt-16">
@@ -1008,45 +1147,55 @@
                     <div class="space-y-0">
                         <div class="flex gap-6 pb-6">
                             <div class="flex-shrink-0 w-10 h-10 rounded-full bg-copper-400/20 border border-copper-400 flex items-center justify-center text-copper-400 font-serif text-sm">1</div>
-                            <div><h4 class="text-cream-100 font-medium">Preparation</h4><p class="text-slate-400 text-sm font-light mt-1">Individual sessions, education, and planning for safety.</p></div>
+                            <div><h4 class="text-cream-100 font-medium">Initial Consultation</h4><p class="text-slate-400 text-sm font-light mt-1">Confidential assessment of the situation, history, and readiness for the process.</p></div>
                         </div>
                         <div class="flex justify-center pb-6"><span class="iconify w-4 h-4 text-copper-400/30" data-icon="lucide:chevron-down"></span></div>
                         <div class="flex gap-6 pb-6">
                             <div class="flex-shrink-0 w-10 h-10 rounded-full bg-copper-400/20 border border-copper-400/60 flex items-center justify-center text-copper-400 font-serif text-sm">2</div>
-                            <div><h4 class="text-cream-100 font-medium">Disclosure Session</h4><p class="text-slate-400 text-sm font-light mt-1">Truth is shared in a structured, professionally guided setting.</p></div>
+                            <div><h4 class="text-cream-100 font-medium">Preparation & Assessment</h4><p class="text-slate-400 text-sm font-light mt-1">Comprehensive preparation work with the individual preparing for disclosure.</p></div>
                         </div>
                         <div class="flex justify-center pb-6"><span class="iconify w-4 h-4 text-copper-400/30" data-icon="lucide:chevron-down"></span></div>
                         <div class="flex gap-6 pb-6">
                             <div class="flex-shrink-0 w-10 h-10 rounded-full bg-copper-400/20 border border-copper-400/60 flex items-center justify-center text-copper-400 font-serif text-sm">3</div>
-                            <div><h4 class="text-cream-100 font-medium">Impact Statement</h4><p class="text-slate-400 text-sm font-light mt-1">The betrayed partner shares the emotional and relational impact.</p></div>
+                            <div><h4 class="text-cream-100 font-medium">Building the Disclosure Document</h4><p class="text-slate-400 text-sm font-light mt-1">Creating a thorough, honest, and appropriately scoped written disclosure.</p></div>
                         </div>
                         <div class="flex justify-center pb-6"><span class="iconify w-4 h-4 text-copper-400/30" data-icon="lucide:chevron-down"></span></div>
                         <div class="flex gap-6 pb-6">
                             <div class="flex-shrink-0 w-10 h-10 rounded-full bg-copper-400/20 border border-copper-400/60 flex items-center justify-center text-copper-400 font-serif text-sm">4</div>
-                            <div><h4 class="text-cream-100 font-medium">Empathy Letter</h4><p class="text-slate-400 text-sm font-light mt-1">The betraying partner responds with empathy and understanding.</p></div>
+                            <div><h4 class="text-cream-100 font-medium">Partner Preparation</h4><p class="text-slate-400 text-sm font-light mt-1">Ensuring the partner has appropriate support, safety planning, and expectations set.</p></div>
                         </div>
                         <div class="flex justify-center pb-6"><span class="iconify w-4 h-4 text-copper-400/30" data-icon="lucide:chevron-down"></span></div>
                         <div class="flex gap-6 pb-6">
                             <div class="flex-shrink-0 w-10 h-10 rounded-full bg-copper-400/20 border border-copper-400/60 flex items-center justify-center text-copper-400 font-serif text-sm">5</div>
-                            <div><h4 class="text-cream-100 font-medium">Truth & Clarity</h4><p class="text-slate-400 text-sm font-light mt-1">Key questions are answered with honesty and transparency.</p></div>
+                            <div><h4 class="text-cream-100 font-medium">The Disclosure Session</h4><p class="text-slate-400 text-sm font-light mt-1">A facilitated, safe session where the disclosure is delivered with professional guidance.</p></div>
                         </div>
                         <div class="flex justify-center pb-6"><span class="iconify w-4 h-4 text-copper-400/30" data-icon="lucide:chevron-down"></span></div>
                         <div class="flex gap-6 pb-6">
                             <div class="flex-shrink-0 w-10 h-10 rounded-full bg-forest-500/20 border border-forest-400 flex items-center justify-center text-forest-300 font-serif text-sm">6</div>
-                            <div><h4 class="text-cream-100 font-medium">Immediate Next Steps</h4><p class="text-slate-400 text-sm font-light mt-1">Initial plans for safety, boundaries, and continued support.</p></div>
+                            <div><h4 class="text-cream-100 font-medium">Immediate Aftercare</h4><p class="text-slate-400 text-sm font-light mt-1">Structured support for both individuals in the hours and days following disclosure.</p></div>
                         </div>
                         <div class="flex justify-center pb-6"><span class="iconify w-4 h-4 text-forest-400/30" data-icon="lucide:chevron-down"></span></div>
                         <div class="flex gap-6">
                             <div class="flex-shrink-0 w-10 h-10 rounded-full bg-forest-500/20 border border-forest-400 flex items-center justify-center text-forest-300 font-serif text-sm">7</div>
-                            <div><h4 class="text-cream-100 font-medium">Ongoing Healing</h4><p class="text-slate-400 text-sm font-light mt-1">Continued counseling and support to rebuild trust and connection.</p></div>
+                            <div><h4 class="text-cream-100 font-medium">Relational Repair Pathway</h4><p class="text-slate-400 text-sm font-light mt-1">Transitioning into ongoing recovery work, which may include couples coaching and individual coaching.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 bg-navy-600/50 border border-copper-400/20 rounded-xl p-8">
+                    <div class="flex items-start gap-4">
+                        <span class="iconify w-6 h-6 text-copper-400 flex-shrink-0 mt-0.5" data-icon="lucide:info"></span>
+                        <div>
+                            <h4 class="text-cream-100 font-medium mb-2">Important Note</h4>
+                            <p class="text-slate-300 text-sm font-light leading-relaxed">Disclosure services begin with a confidential consultation because each situation is unique. Direct online booking is not available for disclosure services. During the consultation, we'll assess readiness, discuss the process in detail, and determine the best path forward together.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="mt-16 text-center p-10 bg-navy-600/50 border border-navy-400/20 rounded-xl">
                     <h3 class="font-serif text-2xl text-cream-50 mb-3">Begin With a Conversation</h3>
-                    <p class="text-slate-300 font-light mb-6">Every disclosure journey starts with a private, confidential consultation. There's no commitment — just a safe space to ask questions and explore whether this process is right for your situation.</p>
-                    <a href="#" onclick="closeService();navigateTo('schedule')" class="btn-primary inline-flex items-center gap-2 px-8 py-4 rounded-lg text-base font-medium">
+                    <p class="text-slate-300 font-light mb-6">Every disclosure journey starts with a private, confidential consultation. There's no commitment—just a safe space to ask questions and explore whether this process is right for your situation.</p>
+                    <a href="#" onclick="closeService();navigateTo('contact')" class="btn-primary inline-flex items-center gap-2 px-8 py-4 rounded-lg text-base font-medium">
                         Request a Disclosure Consultation <span class="iconify w-5 h-5" data-icon="lucide:arrow-right"></span>
                     </a>
                 </div>
@@ -1058,7 +1207,7 @@
     <div id="service-couples" class="overlay-panel">
         <div class="relative">
             <div class="h-80 relative">
-                <img src="photos/pexels-taryn-elliott-4858586.jpg" alt="Couple by lake at sunset" class="w-full h-full object-cover">
+                <img src="https://picsum.photos/seed/lake-couple-sunset/1920/800.jpg" alt="Couple by lake at sunset" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-b from-navy-500/50 to-navy-500"></div>
                 <button onclick="closeService()" class="absolute top-6 right-6 w-12 h-12 rounded-full bg-navy-500/60 backdrop-blur-sm border border-navy-400/30 flex items-center justify-center text-cream-200 hover:text-copper-400 hover:border-copper-400/40 transition-all z-10">
                     <span class="iconify w-6 h-6" data-icon="lucide:x"></span>
@@ -1067,38 +1216,49 @@
             <div class="max-w-4xl mx-auto px-6 -mt-20 relative z-10 pb-20">
                 <span class="text-xs uppercase tracking-[0.25em] text-copper-400 font-medium">Service</span>
                 <h1 class="font-serif text-4xl sm:text-5xl text-cream-50 mt-2 tracking-tight">Couples Recovery</h1>
-                <p class="text-slate-300 text-lg font-light mt-4 max-w-2xl leading-relaxed">For couples navigating the difficult terrain of betrayal recovery — rebuilding trust, restoring communication, and finding a new path forward together.</p>
+                <p class="text-slate-300 text-lg font-light mt-4 max-w-2xl leading-relaxed">For couples navigating the difficult terrain of betrayal recovery—rebuilding trust, restoring communication, and finding a new path forward together.</p>
 
                 <div class="mt-16 grid md:grid-cols-2 gap-12">
                     <div>
-                        <h2 class="font-serif text-2xl text-cream-50 mb-6">Rebuilding Trust After Betrayal</h2>
-                        <div class="space-y-4 text-slate-300 text-sm font-light leading-relaxed">
-                            <p>When trust has been damaged by pornography use, sexual acting out, infidelity, or deception, both partners often experience significant emotional pain and uncertainty.</p>
-                            <p>I provide coaching support for couples seeking to navigate the recovery process together and establish a healthier path forward.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="font-serif text-2xl text-cream-50 mb-6">Typical Focus Areas Include:</h2>
+                        <h2 class="font-serif text-2xl text-cream-50 mb-6">What We Address</h2>
                         <ul class="space-y-3">
-                            <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Rebuilding trust through consistent transparency</li>
-                            <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Developing healthy communication skills</li>
-                            <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Understanding betrayal trauma dynamics</li>
-                            <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Establishing recovery boundaries</li>
-                            <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Creating accountability structures</li>
-                            <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Strengthening emotional connection</li>
-                            <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Managing conflict more effectively</li>
-                            <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Developing empathy and understanding</li>
-                            <li class="flex items-center gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-right"></span>Supporting long-term relational healing</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Healing after betrayal and infidelity</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Rebuilding broken trust</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Healthy communication skills</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Establishing and maintaining boundaries</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Rebuilding emotional and physical intimacy</li>
+                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Creating a shared recovery plan</li>
                         </ul>
                     </div>
-                    
+                    <div>
+                        <h2 class="font-serif text-2xl text-cream-50 mb-6">What Makes This Different</h2>
+                        <div class="space-y-4 text-slate-300 text-sm font-light leading-relaxed">
+                            <p>Couples recovery coaching is not marriage counseling. We focus on the specific dynamics of betrayal recovery and the practical steps both partners need to take.</p>
+                            <p>Both partners are honored in this process. The injured partner's pain is validated, and the betraying partner's genuine effort is supported—with accountability that creates real safety.</p>
+                            <p>We work from a place of hope: marriages can be restored, trust can be rebuilt, and couples can emerge stronger than before.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="mt-16">
-                    <p class="text-slate-300 text-lg font-light mt-4 max-w-4xl leading-relaxed">The goal is not simply reconciliation. The goal is helping couples create a healthier, stronger, and more honest relationship moving forward.</p>
-                </div>
-                
 
-                
+                <div class="mt-16">
+                    <h2 class="font-serif text-2xl text-cream-50 mb-6">Frequently Asked Questions</h2>
+                    <div class="space-y-3">
+                        <div class="faq-item bg-navy-600/50 border border-navy-400/20 rounded-lg overflow-hidden">
+                            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-4 text-left">
+                                <span class="text-cream-100 text-sm font-medium pr-4">Should we have already completed disclosure before starting couples work?</span>
+                                <span class="iconify faq-chevron w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-down"></span>
+                            </button>
+                            <div class="faq-answer px-6 pb-0"><p class="text-slate-300 text-sm font-light leading-relaxed pb-4">It depends on your situation. In some cases, beginning couples work alongside or even before formal disclosure can be beneficial. We'll discuss the best timing during your consultation.</p></div>
+                        </div>
+                        <div class="faq-item bg-navy-600/50 border border-navy-400/20 rounded-lg overflow-hidden">
+                            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-4 text-left">
+                                <span class="text-cream-100 text-sm font-medium pr-4">Do you take sides?</span>
+                                <span class="iconify faq-chevron w-5 h-5 text-copper-400 flex-shrink-0" data-icon="lucide:chevron-down"></span>
+                            </button>
+                            <div class="faq-answer px-6 pb-0"><p class="text-slate-300 text-sm font-light leading-relaxed pb-4">No. I hold space for both partners. The injured partner's pain is real and valid. The betraying partner's recovery work is necessary and important. Both deserve respect and both have work to do—though the nature of that work differs.</p></div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="mt-16 text-center p-10 bg-navy-600/50 border border-navy-400/20 rounded-xl">
                     <h3 class="font-serif text-2xl text-cream-50 mb-3">Start Healing Together</h3>
@@ -1115,7 +1275,7 @@
     <div id="service-cvi" class="overlay-panel">
         <div class="relative">
             <div class="h-80 relative">
-                <img src="photos/pexels-harveyvillarino-4183049.jpg" alt="Compass on wooden map" class="w-full h-full object-cover">
+                <img src="https://picsum.photos/seed/compass-wooden-map/1920/800.jpg" alt="Compass on wooden map" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-b from-navy-500/50 to-navy-500"></div>
                 <button onclick="closeService()" class="absolute top-6 right-6 w-12 h-12 rounded-full bg-navy-500/60 backdrop-blur-sm border border-navy-400/30 flex items-center justify-center text-cream-200 hover:text-copper-400 hover:border-copper-400/40 transition-all z-10">
                     <span class="iconify w-6 h-6" data-icon="lucide:x"></span>
@@ -1124,51 +1284,69 @@
             <div class="max-w-4xl mx-auto px-6 -mt-20 relative z-10 pb-20">
                 <span class="text-xs uppercase tracking-[0.25em] text-copper-400 font-medium">Service</span>
                 <h1 class="font-serif text-4xl sm:text-5xl text-cream-50 mt-2 tracking-tight">Core Values Index</h1>
-                <p class="text-slate-300 text-lg font-light mt-4 max-w-2xl leading-relaxed">Discover the deepest drivers of who you are. The CVI isn't a personality test — it's a lens into your core motivations that transforms how you lead, relate, and recover.</p>
-                <div class="mt-16 gap-12">
-                    <h2 class="font-serif text-2xl text-cream-50 mb-6">Discover How You Are Wired</h2>
+                <p class="text-slate-300 text-lg font-light mt-4 max-w-2xl leading-relaxed">Discover the deepest drivers of who you are. The CVI isn't a personality test—it's a lens into your core motivations that transforms how you lead, relate, and recover.</p>
+
+                <div class="mt-16">
+                    <h2 class="font-serif text-2xl text-cream-50 mb-6">What Makes the CVI Different</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
                         <div class="space-y-4 text-slate-300 text-sm font-light leading-relaxed">
-                            <p>The Core Values Index (CVI) is a powerful psychometric assessment that measures an individual's innate and unchanging core values and motivational drivers.</p>
-                            <p>Unlike personality assessments that describe behavior, the CVI identifies what naturally energizes and motivates a person at their deepest level. It helps clients understand how they are uniquely wired and why they approach life, relationships, work, leadership, and decision-making the way they do.</p>
+                            <p>Most assessments measure how you behave. The CVI measures <span class="text-copper-400">why</span> you behave that way—your deepest, most unchanging motivations.</p>
+                            <p>It takes less than 10 minutes to complete, yet provides insights that remain accurate for a lifetime. Your core values don't change; understanding them changes everything.</p>
                         </div>
-                </div>
-                <div class="mt-16 grid md:grid-cols-2 gap-12">
-                    <div>
-                        <h2 class="font-serif text-2xl text-cream-50 mb-6">The CVI can provide valuable insight for:</h2>
-                        <ul class="space-y-3">
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Personal growth and self-awareness</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Career development and vocational alignment</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Leadership development</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Relationship understanding</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Team effectiveness</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Conflict resolution</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Decision-making confidence</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Recovery and personal transformation</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Communication improvement</li>
-                        </ul>
-                    </div>                    
-                    <div>
-                        <h2 class="font-serif text-2xl text-cream-50 mb-6">Through a guided CVI debrief, clients gain a clearer understanding of:</h2>
-                        <ul class="space-y-3">
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Their natural strengths</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Core motivational drivers</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Areas of potential stress and frustration</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Communication preferences</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Leadership tendencies</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Relationship dynamics</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Personal growth opportunities</li>
-                            <li class="flex items-start gap-3 text-slate-300 text-sm font-light"><span class="iconify w-5 h-5 text-copper-400 mt-0.5 flex-shrink-0" data-icon="lucide:check"></span>Sources of energy and fulfillment</li>
-                        </ul>
+                        <div class="space-y-4 text-slate-300 text-sm font-light leading-relaxed">
+                            <p>Unlike personality tests that put you in a box, the CVI opens doors. It reveals your unique blend of motivations and shows you how to leverage them in every area of life.</p>
+                            <p>With a 97% repeat-reliability rating, it's the most accurate assessment of its kind available.</p>
+                        </div>
                     </div>
-                    
                 </div>
-                <div class="mt-16 gap-12">
-                    <p class="text-slate-300 text-lg font-light mt-4 max-w-4xl leading-relaxed">Understanding how a person is uniquely designed often creates powerful breakthroughs in confidence, purpose, effectiveness, and self-understanding.</p>
+
+                <div class="mt-16">
+                    <h2 class="font-serif text-2xl text-cream-50 mb-8">What You Receive</h2>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="bg-navy-600/50 border border-navy-400/20 rounded-lg p-5 text-center">
+                            <span class="iconify w-8 h-8 text-copper-400 mx-auto mb-3" data-icon="lucide:file-check"></span>
+                            <h4 class="text-cream-100 text-sm font-medium">CVI Assessment</h4>
+                            <p class="text-slate-400 text-xs font-light mt-1">Online assessment access</p>
+                        </div>
+                        <div class="bg-navy-600/50 border border-navy-400/20 rounded-lg p-5 text-center">
+                            <span class="iconify w-8 h-8 text-copper-400 mx-auto mb-3" data-icon="lucide:bar-chart-3"></span>
+                            <h4 class="text-cream-100 text-sm font-medium">Full Report</h4>
+                            <p class="text-slate-400 text-xs font-light mt-1">Detailed results document</p>
+                        </div>
+                        <div class="bg-navy-600/50 border border-navy-400/20 rounded-lg p-5 text-center">
+                            <span class="iconify w-8 h-8 text-copper-400 mx-auto mb-3" data-icon="lucide:message-circle"></span>
+                            <h4 class="text-cream-100 text-sm font-medium">Professional Debrief</h4>
+                            <p class="text-slate-400 text-xs font-light mt-1">60-minute coaching session</p>
+                        </div>
+                        <div class="bg-navy-600/50 border border-navy-400/20 rounded-lg p-5 text-center">
+                            <span class="iconify w-8 h-8 text-copper-400 mx-auto mb-3" data-icon="lucide:map"></span>
+                            <h4 class="text-cream-100 text-sm font-medium">Action Plan</h4>
+                            <p class="text-slate-400 text-xs font-light mt-1">Personalized next steps</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <h2 class="font-serif text-2xl text-cream-50 mb-6">Applications</h2>
+                    <div class="grid sm:grid-cols-3 gap-6">
+                        <div>
+                            <h4 class="text-copper-400 text-sm font-medium mb-3 flex items-center gap-2"><span class="iconify w-5 h-5" data-icon="lucide:briefcase"></span> Leadership</h4>
+                            <p class="text-slate-400 text-sm font-light">Understand your leadership style, identify blind spots, and lead from your strengths.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-copper-400 text-sm font-medium mb-3 flex items-center gap-2"><span class="iconify w-5 h-5" data-icon="lucide:heart"></span> Relationships</h4>
+                            <p class="text-slate-400 text-sm font-light">See why you and your partner connect—or clash—and build bridges of understanding.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-copper-400 text-sm font-medium mb-3 flex items-center gap-2"><span class="iconify w-5 h-5" data-icon="lucide:refresh-cw"></span> Recovery</h4>
+                            <p class="text-slate-400 text-sm font-light">Align your recovery plan with what truly motivates you for lasting change.</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="mt-16 text-center p-10 bg-navy-600/50 border border-navy-400/20 rounded-xl">
                     <h3 class="font-serif text-2xl text-cream-50 mb-3">Discover Your Design</h3>
-                    <p class="text-slate-300 font-light mb-6">Whether used for personal growth, leadership development, recovery work, or relationship enhancement, the CVI provides practical insight that clients can immediately apply to their lives.</p>
+                    <p class="text-slate-300 font-light mb-6">In less time than a lunch break, you can gain clarity that most people never find in a lifetime.</p>
                     <a href="#" onclick="closeService();navigateTo('schedule')" class="btn-primary inline-flex items-center gap-2 px-8 py-4 rounded-lg text-base font-medium">
                         Schedule Your CVI Assessment <span class="iconify w-5 h-5" data-icon="lucide:arrow-right"></span>
                     </a>
@@ -1181,7 +1359,7 @@
     <div id="service-adventure" class="overlay-panel">
         <div class="relative">
             <div class="h-80 relative">
-                <img src="photos/pexels-robertkso-14448956.jpg" alt="Wilderness campfire" class="w-full h-full object-cover">
+                <img src="https://picsum.photos/seed/wilderness-camp-fire/1920/800.jpg" alt="Wilderness campfire" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-b from-navy-500/50 to-navy-500"></div>
                 <button onclick="closeService()" class="absolute top-6 right-6 w-12 h-12 rounded-full bg-navy-500/60 backdrop-blur-sm border border-navy-400/30 flex items-center justify-center text-cream-200 hover:text-copper-400 hover:border-copper-400/40 transition-all z-10">
                     <span class="iconify w-6 h-6" data-icon="lucide:x"></span>
@@ -1190,14 +1368,14 @@
             <div class="max-w-4xl mx-auto px-6 -mt-20 relative z-10 pb-20">
                 <span class="text-xs uppercase tracking-[0.25em] text-copper-400 font-medium">Experience</span>
                 <h1 class="font-serif text-4xl sm:text-5xl text-cream-50 mt-2 tracking-tight">Adventure-Based<br>Men's Experiences</h1>
-                <p class="text-slate-300 text-lg font-light mt-4 max-w-2xl leading-relaxed">Some of life's greatest growth occurs outside the comfort of familiar routines.</p>
+                <p class="text-slate-300 text-lg font-light mt-4 max-w-2xl leading-relaxed">There's something about the trail that strips away pretense and creates space for honest reflection, genuine brotherhood, and transformative growth.</p>
 
                 <div class="mt-16">
-                    <h2 class="font-serif text-2xl text-cream-50 mb-6">Growth Through Challenge, Connection, and Shared Experience</h2>
+                    <h2 class="font-serif text-2xl text-cream-50 mb-6">The Vision</h2>
                     <div class="text-slate-300 font-light leading-relaxed space-y-4 max-w-3xl">
-                        <p>While coaching and recovery work provide valuable insight and direction, meaningful transformation is often strengthened through real-world experiences that challenge men physically, mentally, emotionally, and spiritually.</p>
-                        <p>Adventure-Based Men's Experiences are designed to help men step away from the demands of daily life and engage in experiences that foster connection, resilience, self-discovery, leadership, and personal growth.</p>
-                        <p>Several times each year, I facilitate small-group experiential events where men come together to pursue challenge, adventure, reflection, and authentic connection.</p>
+                        <p>Adventure Coaching will offer several guided outdoor experiences each year, designed specifically for men who are on a journey of integrity, recovery, or leadership development.</p>
+                        <p>These aren't retreats with conference rooms and PowerPoint presentations. They're real experiences on real terrain—hiking through wilderness, paddling rivers, sitting around campfires, and having the kind of conversations that only happen when the distractions fall away.</p>
+                        <p>Every experience integrates intentional coaching, reflection exercises, and brotherhood into the fabric of the adventure.</p>
                     </div>
                 </div>
 
@@ -1232,14 +1410,6 @@
                             <span class="iconify w-8 h-8 text-copper-400 mx-auto mb-2" data-icon="lucide:trees"></span>
                             <span class="text-cream-200 text-sm">Wilderness Reflection</span>
                         </div>
-                    </div>
-                </div>
-                <div class="mt-16">
-                    <div class="text-slate-300 font-light leading-relaxed space-y-4 max-w-3xl">
-                        <p>These experiences are not simply recreational outings. They are intentionally designed opportunities for reflection, personal growth, meaningful conversations, and authentic connection with other men pursuing lives of integrity and purpose.</p>
-                        <p>Many men discover that some of life's most significant breakthroughs occur while walking a trail, paddling a river, sitting around a campfire, or sharing challenges alongside others who understand their journey.</p>
-                        <p>Whether participating as part of a recovery journey, leadership development process, or personal growth experience, these events provide opportunities to grow in confidence, resilience, self-awareness, and brotherhood.</p>
-                        <p>The vision is to host several adventure-based experiences each year, creating ongoing opportunities for men to pursue growth, challenge, connection, and purpose beyond the coaching office.</p>
                     </div>
                 </div>
 
@@ -1290,6 +1460,7 @@
                     <h4 class="text-xs uppercase tracking-[0.2em] text-copper-400 font-medium mb-4">Quick Links</h4>
                     <ul class="space-y-2.5">
                         <li><a href="#" onclick="navigateTo('about')" class="text-slate-400 text-sm hover:text-copper-400 transition-colors">About Lance</a></li>
+                        <li><a href="#" onclick="navigateTo('resources')" class="text-slate-400 text-sm hover:text-copper-400 transition-colors">Resources</a></li>
                         <li><a href="#" onclick="navigateTo('contact')" class="text-slate-400 text-sm hover:text-copper-400 transition-colors">Contact</a></li>
                         <li><a href="#" onclick="navigateTo('schedule')" class="text-slate-400 text-sm hover:text-copper-400 transition-colors">Schedule Consultation</a></li>
                     </ul>
