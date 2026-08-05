@@ -2,8 +2,8 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta property="og:image" content="../Logo.png" />
-    <link rel="icon" href="../Logo.png" />
+    <meta property="og:image" content="Logo.png" />
+    <link rel="icon" href="Logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Meet Lance Baker — Board Certified Mental Health Coach, Pastoral Sex Addiction Professional, and Core Values Index practitioner with 30+ years in law enforcement, guiding men, couples, and leaders toward truth, healing, and restoration.">
     <meta name="keywords" content="Lance Baker, Integrity Coach, Sexual Recovery Coach, Board Certified Mental Health Coach, Pastoral Sex Addiction Professional, Core Values Index Practitioner, Christian Recovery Coach, First Responder Coach">
@@ -114,104 +114,19 @@
 
     <!-- ========== NAVIGATION ========== -->
     <nav id="mainNav" class="fixed top-0 left-0 right-0 z-50 nav-scrolled">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Logo -->
-            <a href="index.html" class="flex items-center gap-3 group">
-                <img src="LogoWhite.svg" alt="Adventure Coaching logo" class="w-10 h-10" />
-                <div>
-                    <span class="font-serif text-lg text-cream-100 tracking-wide group-hover:text-copper-400 transition-colors">Adventure Coaching</span>
-                    <span class="block text-[10px] uppercase tracking-[0.25em] text-copper-400 font-light">The View From the Summit</span>
-                </div>
-            </a>
-
-            <!-- Desktop Nav -->
-            <div class="hidden lg:flex items-center gap-1">
-                <a href="index.html" class="nav-link px-4 py-2 text-sm text-cream-200 hover:text-copper-400 transition-colors duration-300">Home</a>
-                <a href="about.html" class="nav-link px-4 py-2 text-sm text-cream-200 hover:text-copper-400 transition-colors duration-300">About Lance</a>
-
-                <!-- Services Dropdown -->
-                <div class="relative" id="servicesDropdown">
-                    <button onclick="toggleDropdown()" class="nav-link px-4 py-2 text-sm text-cream-200 hover:text-copper-400 transition-colors duration-300 flex items-center gap-1">
-                        Services
-                        <span class="iconify w-4 h-4 transition-transform duration-300" data-icon="lucide:chevron-down" id="dropdownChevron"></span>
-                    </button>
-                    <div class="dropdown-menu absolute top-full left-0 mt-2 w-72 bg-navy-600 border border-navy-400/30 rounded-lg shadow-2xl p-2" id="dropdownMenu">
-                        <a href="integrity.html" class="flex items-center gap-3 px-4 py-3 rounded-md hover:bg-cream-100/5 transition-colors group">
-                            <span class="iconify w-5 h-5 text-copper-400" data-icon="lucide:shield-check"></span>
-                            <div>
-                                <span class="text-sm text-cream-100 group-hover:text-copper-400 transition-colors">Integrity Coaching</span>
-                                <span class="block text-xs text-slate-400">Freedom & purpose</span>
-                            </div>
-                        </a>
-                        <a href="disclosure.html" class="flex items-center gap-3 px-4 py-3 rounded-md hover:bg-cream-100/5 transition-colors group">
-                            <span class="iconify w-5 h-5 text-copper-400" data-icon="lucide:door-open"></span>
-                            <div>
-                                <span class="text-sm text-cream-100 group-hover:text-copper-400 transition-colors">Disclosure & Repair</span>
-                                <span class="block text-xs text-slate-400">Truth & healing</span>
-                            </div>
-                        </a>
-                        <a href="couples.html" class="flex items-center gap-3 px-4 py-3 rounded-md hover:bg-cream-100/5 transition-colors group">
-                            <span class="iconify w-5 h-5 text-copper-400" data-icon="lucide:heart-handshake"></span>
-                            <div>
-                                <span class="text-sm text-cream-100 group-hover:text-copper-400 transition-colors">Couples Recovery</span>
-                                <span class="block text-xs text-slate-400">Trust & connection</span>
-                            </div>
-                        </a>
-                        <a href="cvi.html" class="flex items-center gap-3 px-4 py-3 rounded-md hover:bg-cream-100/5 transition-colors group">
-                            <span class="iconify w-5 h-5 text-copper-400" data-icon="lucide:compass"></span>
-                            <div>
-                                <span class="text-sm text-cream-100 group-hover:text-copper-400 transition-colors">Core Values Index</span>
-                                <span class="block text-xs text-slate-400">Discover your design</span>
-                            </div>
-                        </a>
-                        <a href="adventure.html" class="flex items-center gap-3 px-4 py-3 rounded-md hover:bg-cream-100/5 transition-colors group">
-                            <span class="iconify w-5 h-5 text-copper-400" data-icon="lucide:mountain"></span>
-                            <div>
-                                <span class="text-sm text-cream-100 group-hover:text-copper-400 transition-colors">Adventure Experiences</span>
-                                <span class="block text-xs text-slate-400">Wilderness & growth</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <a href="contact.html" class="nav-link px-4 py-2 text-sm text-cream-200 hover:text-copper-400 transition-colors duration-300">Contact</a>
-                <a href="schedule.html" class="ml-4 btn-primary px-6 py-2.5 rounded-lg text-sm font-medium">Schedule Consultation</a>
-            </div>
-
-            <!-- Mobile Menu Toggle -->
-            <button onclick="toggleMobileMenu()" class="lg:hidden w-10 h-10 flex items-center justify-center text-cream-200" id="mobileToggle">
-                <span class="iconify w-6 h-6" data-icon="lucide:menu" id="mobileMenuIcon"></span>
-            </button>
-        </div>
+        <div id="navigation-placeholder"></div>
+    <script src="parts/navigation.js"></script>
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu fixed inset-0 z-40 bg-navy-500 lg:hidden" id="mobileMenu">
-        <div class="pt-24 px-6 pb-8 h-full overflow-y-auto">
-            <div class="flex flex-col gap-1">
-                <a href="index.html" class="px-4 py-3 text-lg text-cream-100 hover:text-copper-400 transition-colors border-b border-navy-400/20">Home</a>
-                <a href="about.html" class="px-4 py-3 text-lg text-cream-100 hover:text-copper-400 transition-colors border-b border-navy-400/20">About Lance</a>
-                <div class="px-4 py-3 text-lg text-copper-400 border-b border-navy-400/20 cursor-pointer" onclick="toggleMobileServices()">Services <span class="iconify inline w-4 h-4" data-icon="lucide:chevron-down" id="mobileServicesChevron"></span></div>
-                <div id="mobileServicesList" class="hidden pl-6">
-                    <a href="integrity.html" class="block px-4 py-2.5 text-sm text-cream-200 hover:text-copper-400 transition-colors">Integrity Coaching</a>
-                    <a href="disclosure.html" class="block px-4 py-2.5 text-sm text-cream-200 hover:text-copper-400 transition-colors">Disclosure & Relational Repair</a>
-                    <a href="couples.html" class="block px-4 py-2.5 text-sm text-cream-200 hover:text-copper-400 transition-colors">Couples Recovery</a>
-                    <a href="cvi.html" class="block px-4 py-2.5 text-sm text-cream-200 hover:text-copper-400 transition-colors">Core Values Index</a>
-                    <a href="adventure.html" class="block px-4 py-2.5 text-sm text-cream-200 hover:text-copper-400 transition-colors">Adventure Experiences</a>
-                </div>
-                <a href="contact.html" class="px-4 py-3 text-lg text-cream-100 hover:text-copper-400 transition-colors border-b border-navy-400/20">Contact</a>
-            </div>
-            <div class="mt-8">
-                <a href="schedule.html" class="btn-primary block text-center px-6 py-3.5 rounded-lg text-base font-medium">Schedule Consultation</a>
-            </div>
-        </div>
-    </div>
+    <div id="mobileNav-placeholder"></div>
+    <script src="parts/mobileNav.js"></script>
 
     <!-- ========== PAGE CONTENT ========== -->
     <main id="page-about" class="page-section">
         <section class="relative pt-32 pb-20 px-6">
             <div class="absolute inset-0">
-                <img src="../photos/pexels-andrejcook-542704.jpg" alt="Mountain ridge" class="w-full h-full object-cover">
+                <img src="photos/pexels-andrejcook-542704.jpg" alt="Mountain ridge" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-b from-navy-500/70 to-navy-500"></div>
             </div>
             <div class="relative z-10 max-w-4xl mx-auto text-center">
@@ -225,7 +140,7 @@
                 <div class="grid md:grid-cols-5 gap-12 items-start">
                     <div class="md:col-span-2 reveal-on-scroll">
                         <div class="aspect-[3/4] rounded-xl overflow-hidden">
-                            <img src="../Lance%20Crop.PNG" alt="Lance Baker portrait" class="w-full h-full object-cover">
+                            <img src="Lance%20Crop.PNG" alt="Lance Baker portrait" class="w-full h-full object-cover">
                         </div>
                     </div>
                     <div class="md:col-span-3 space-y-6">
